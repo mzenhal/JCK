@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body class="min-w-80 bg-stone-50 font-sans text-slate-800 antialiased">
-    <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-slate-950/80 text-white backdrop-blur-xl">
+    <header class="site-header fixed inset-x-0 top-0 z-50 text-white" data-site-header>
       <nav class="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <a href="index.html" class="flex items-center gap-3" aria-label="JCK Builder's home">
-          <span class="grid size-11 place-items-center rounded-lg bg-amber-400 text-sm font-black tracking-wide text-slate-950">JCK</span>
+          <span class="grid size-11 place-items-center rounded-lg bg-amber-400 text-sm font-black tracking-wide text-slate-950 shadow-lg shadow-slate-950/20">JCK</span>
           <span class="leading-tight">
             <span class="block text-base font-bold">JCK Builder's</span>
             <span class="block text-xs font-medium uppercase tracking-[0.22em] text-amber-200">Interior LLP</span>
@@ -23,7 +23,7 @@
         </a>
 
         <button
-          class="inline-flex size-11 items-center justify-center rounded-lg border border-white/15 text-white lg:hidden"
+          class="inline-flex size-11 items-center justify-center rounded-lg border border-white/20 bg-white/5 text-white backdrop-blur lg:hidden"
           data-menu-toggle
           aria-label="Open navigation"
           aria-expanded="false"
@@ -32,19 +32,61 @@
         </button>
 
         <div
-          class="absolute left-4 right-4 top-24 hidden rounded-lg border border-white/10 bg-slate-950 p-4 shadow-2xl lg:static lg:block lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none"
+          class="absolute left-4 right-4 top-24 hidden rounded-lg border border-white/10 bg-slate-950/95 p-4 shadow-2xl shadow-slate-950/30 backdrop-blur-2xl lg:static lg:block lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none lg:backdrop-blur-0"
           data-menu
         >
-          <div class="flex flex-col gap-2 text-sm font-semibold text-slate-200 lg:flex-row lg:items-center lg:gap-7">
-            <a class="rounded px-3 py-2 text-amber-200 hover:bg-white/10 lg:px-0 lg:hover:bg-transparent" href="index.html">Home</a>
-            <a class="rounded px-3 py-2 hover:bg-white/10 hover:text-amber-200 lg:px-0 lg:hover:bg-transparent" href="about.html">About</a>
-            <a class="rounded px-3 py-2 hover:bg-white/10 hover:text-amber-200 lg:px-0 lg:hover:bg-transparent" href="services.html">Services</a>
-            <a class="rounded px-3 py-2 hover:bg-white/10 hover:text-amber-200 lg:px-0 lg:hover:bg-transparent" href="projects.html">Projects</a>
-            <a class="rounded px-3 py-2 hover:bg-white/10 hover:text-amber-200 lg:px-0 lg:hover:bg-transparent" href="gallery.html">Gallery</a>
-            <a class="rounded px-3 py-2 hover:bg-white/10 hover:text-amber-200 lg:px-0 lg:hover:bg-transparent" href="process.html">Process</a>
-            <a class="rounded px-3 py-2 hover:bg-white/10 hover:text-amber-200 lg:px-0 lg:hover:bg-transparent" href="testimonials.html">Testimonials</a>
-            <a class="rounded px-3 py-2 hover:bg-white/10 hover:text-amber-200 lg:px-0 lg:hover:bg-transparent" href="contact.html">Contact</a>
-            <a class="mt-2 inline-flex min-h-11 items-center justify-center rounded bg-amber-400 px-5 py-3 text-sm font-black text-slate-950 shadow-sm hover:bg-amber-300 lg:mt-0" href="contact.html">Get Quote</a>
+          <div class="nav-stack flex flex-col gap-1 text-sm font-semibold text-slate-200 lg:flex-row lg:items-center lg:gap-2">
+            <div class="nav-item">
+              <a class="nav-link is-active" href="index.html">Home</a>
+              <div class="nav-panel">
+                <p class="nav-panel-title">Home</p>
+                <a href="#services-preview"><span>What we do</span><small>Construction and interiors overview</small></a>
+                <a href="#featured-work"><span>Featured work</span><small>Selected homes and commercial spaces</small></a>
+              </div>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+              <div class="nav-panel">
+                <p class="nav-panel-title">About JCK</p>
+                <a href="about.html"><span>Company story</span><small>Experience, team and approach</small></a>
+                <a href="about.html#values"><span>Our values</span><small>Quality, trust and site discipline</small></a>
+              </div>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+              <div class="nav-panel">
+                <p class="nav-panel-title">Services</p>
+                <a href="services.html#construction"><span>Construction</span><small>Residential, villa and commercial builds</small></a>
+                <a href="services.html#interiors"><span>Interiors</span><small>Kitchen, bedroom and full-space design</small></a>
+              </div>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+              <div class="nav-panel">
+                <p class="nav-panel-title">Projects</p>
+                <a href="projects.html"><span>Villas</span><small>Premium residential construction</small></a>
+                <a href="projects.html"><span>Commercial</span><small>Offices and business spaces</small></a>
+              </div>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+              <div class="nav-panel">
+                <p class="nav-panel-title">Gallery</p>
+                <a href="gallery.html"><span>Interiors</span><small>Finished rooms and material details</small></a>
+                <a href="gallery.html"><span>Build sites</span><small>Progress, structure and execution</small></a>
+              </div>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link" href="process.html">Process</a>
+              <div class="nav-panel">
+                <p class="nav-panel-title">Process</p>
+                <a href="process.html"><span>Planning</span><small>Scope, design, estimates and timeline</small></a>
+                <a href="process.html"><span>Handover</span><small>Finishing, inspection and delivery</small></a>
+              </div>
+            </div>
+            <a class="nav-link" href="testimonials.html">Reviews</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="mt-2 inline-flex min-h-11 items-center justify-center rounded bg-amber-400 px-5 py-3 text-sm font-black text-slate-950 shadow-sm transition hover:bg-amber-300 lg:ml-2 lg:mt-0" href="contact.html">Get Quote</a>
           </div>
         </div>
       </nav>
@@ -146,7 +188,7 @@
         </div>
       </section>
 
-      <section class="bg-stone-100 py-16 sm:py-20 lg:py-28">
+      <section id="services-preview" class="bg-stone-100 py-16 sm:py-20 lg:py-28">
         <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="max-w-3xl">
             <p class="text-xs font-black uppercase tracking-[0.22em] text-amber-600">Services</p>
@@ -163,7 +205,7 @@
         </div>
       </section>
 
-      <section class="bg-white py-16 sm:py-20 lg:py-28">
+      <section id="featured-work" class="bg-white py-16 sm:py-20 lg:py-28">
         <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="flex flex-col justify-between gap-5 lg:flex-row lg:items-end">
             <div class="max-w-2xl">

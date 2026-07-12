@@ -1,17 +1,29 @@
 const menuToggle = document.querySelector('[data-menu-toggle]');
 const menu = document.querySelector('[data-menu]');
+const siteHeader = document.querySelector('[data-site-header]');
+
+if (siteHeader) {
+  const updateHeader = () => {
+    siteHeader.classList.toggle('is-scrolled', window.scrollY > 24);
+  };
+
+  updateHeader();
+  window.addEventListener('scroll', updateHeader, { passive: true });
+}
 
 if (menuToggle && menu) {
   menuToggle.addEventListener('click', () => {
     const isOpen = !menu.classList.contains('hidden');
     menu.classList.toggle('hidden', isOpen);
     menuToggle.setAttribute('aria-expanded', String(!isOpen));
+    siteHeader?.classList.toggle('is-open', !isOpen);
   });
 
   menu.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {
       menu.classList.add('hidden');
       menuToggle.setAttribute('aria-expanded', 'false');
+      siteHeader?.classList.remove('is-open');
     });
   });
 }

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — JCK Builder's & Interior LLP</title>
+  <meta name="description" content="Get in touch with JCK Builder's for construction, interior design, and renovation queries. Call, email, or visit our office in Bangalore.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo"><div class="nav-logo-icon">JCK</div><div class="nav-logo-text">JCK <span>Builder's</span></div></a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="process.html">Process</a><a href="testimonials.html">Testimonials</a><a href="contact.html" class="active">Contact</a>
+        <div class="nav-cta"><a href="contact.html" class="btn btn-primary">Get Quote</a></div>
+      </div>
+      <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Contact</span></div>
+      <h1 class="section-title" style="margin-top:12px;">Contact Us</h1>
+      <p class="section-subtitle light">Let's discuss your project. Reach out to us anytime.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Left — Info -->
+        <div>
+          <div class="reveal">
+            <span class="section-label">Get in Touch</span>
+            <h2 class="section-title">We'd Love to Hear From You</h2>
+            <p class="section-subtitle" style="margin-bottom:32px;">Whether you're planning a new construction, renovation, or interior design project, our team is ready to help. Reach out through any of the channels below.</p>
+          </div>
+          <div class="contact-info-cards reveal">
+            <div class="contact-info-card">
+              <div class="icon">📞</div>
+              <h4>Phone</h4>
+              <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+            </div>
+            <div class="contact-info-card">
+              <div class="icon">✉️</div>
+              <h4>Email</h4>
+              <p><a href="mailto:info@jckbuilders.com">info@jckbuilders.com</a></p>
+            </div>
+            <div class="contact-info-card">
+              <div class="icon">📍</div>
+              <h4>Office</h4>
+              <p>JCK Builder's, MG Road,<br>Bangalore, Karnataka 560001</p>
+            </div>
+            <div class="contact-info-card">
+              <div class="icon">⏰</div>
+              <h4>Working Hours</h4>
+              <p>Mon — Sat: 9:00 AM — 7:00 PM<br>Sunday: By Appointment</p>
+            </div>
+          </div>
+
+          <!-- WhatsApp CTA -->
+          <div class="reveal" style="margin-top:16px;">
+            <a href="https://wa.me/919876543210?text=Hi%20JCK%20Builder's!%20I'm%20interested%20in%20your%20services." target="_blank" class="btn btn-primary" style="background:#25D366;width:100%;font-size:1rem;">
+              💬 Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Right — Form -->
+        <div class="contact-form reveal">
+          <h3>Send Us a Message</h3>
+          <form id="contact-form" onsubmit="event.preventDefault(); document.getElementById('form-success').style.display='block'; this.reset();">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">Full Name *</label>
+                <input type="text" id="contact-name" placeholder="Your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-phone">Phone Number *</label>
+                <input type="tel" id="contact-phone" placeholder="+91 XXXXX XXXXX" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label for="contact-service">Service Required</label>
+              <select id="contact-service">
+                <option value="">Select a service</option>
+                <option value="construction">Building Construction</option>
+                <option value="architecture">Architecture & Planning</option>
+                <option value="interior">Interior Design</option>
+                <option value="renovation">Renovation & Remodeling</option>
+                <option value="villa">Villa Construction</option>
+                <option value="commercial">Commercial Construction</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-budget">Estimated Budget</label>
+                <select id="contact-budget">
+                  <option value="">Select range</option>
+                  <option value="10-25L">₹10L — ₹25L</option>
+                  <option value="25-50L">₹25L — ₹50L</option>
+                  <option value="50L-1Cr">₹50L — ₹1Cr</option>
+                  <option value="1Cr-3Cr">₹1Cr — ₹3Cr</option>
+                  <option value="3Cr+">₹3Cr+</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="contact-location">Project Location</label>
+                <input type="text" id="contact-location" placeholder="City / Area">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Project Details *</label>
+              <textarea id="contact-message" placeholder="Tell us about your project — type, size, timeline, special requirements..." rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;font-size:1rem;">Send Message →</button>
+          </form>
+
+          <!-- Success Message -->
+          <div id="form-success" style="display:none;margin-top:20px;padding:20px;background:rgba(212,175,55,0.08);border:1px solid rgba(212,175,55,0.2);border-radius:var(--radius-md);text-align:center;">
+            <p style="font-size:1.1rem;color:var(--navy);font-weight:600;">✅ Thank you for reaching out!</p>
+            <p style="font-size:0.9rem;color:var(--gray-500);margin-top:8px;">Our team will get back to you within 24 hours. For urgent enquiries, please call us directly.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- GOOGLE MAP -->
+      <div class="map-container reveal">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9849375891447!2d77.6069!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sMG%20Road%2C%20Bangalore!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="JCK Builder's Office Location">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOK SITE VISIT CTA -->
+  <section class="section-dark">
+    <div class="container" style="text-align:center;">
+      <div class="reveal">
+        <span class="section-label">Free Service</span>
+        <h2 style="font-family:var(--font-display);font-size:2rem;color:var(--white);margin:12px 0;">📅 Book a Free Site Visit</h2>
+        <p style="color:var(--gray-400);max-width:600px;margin:0 auto 28px;line-height:1.8;">Our construction experts will visit your project site, assess requirements, and provide a detailed proposal — absolutely free of charge.</p>
+        <a href="#" class="btn btn-primary" data-modal="site-visit-modal">Schedule Site Visit →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="nav-logo"><div class="nav-logo-icon">JCK</div><div class="nav-logo-text">JCK <span>Builder's</span></div></a><p>Building excellence and designing dreams since 2010.</p><div class="footer-social"><a href="#">📘</a><a href="#">📷</a><a href="#">💼</a><a href="#">▶️</a></div></div>
+        <div class="footer-column"><h4>Quick Links</h4><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></div>
+        <div class="footer-column"><h4>Services</h4><a href="services.html">Construction</a><a href="services.html">Architecture</a><a href="services.html">Interior Design</a><a href="services.html">Renovation</a></div>
+        <div class="footer-column"><h4>Contact</h4><a href="tel:+919876543210">📞 +91 98765 43210</a><a href="mailto:info@jckbuilders.com">✉️ info@jckbuilders.com</a><a href="#">📍 Bangalore, Karnataka</a></div>
+      </div>
+      <div class="footer-bottom"><p>© 2024 JCK Builder's & Interior LLP. All rights reserved.</p><p>Designed with ❤️</p></div>
+    </div>
+  </footer>
+
+  <!-- SITE VISIT MODAL -->
+  <div class="modal-overlay" id="site-visit-modal">
+    <div class="modal">
+      <div class="modal-close">✕</div>
+      <h3>📅 Book a Site Visit</h3>
+      <p>Schedule a free site visit with our construction experts.</p>
+      <form onsubmit="event.preventDefault(); alert('Site visit request submitted successfully! Our team will contact you shortly. (Demo)'); this.closest('.modal-overlay').classList.remove('active'); document.body.style.overflow='';">
+        <div class="form-group"><label for="sv-name">Your Name</label><input type="text" id="sv-name" placeholder="Full name" required></div>
+        <div class="form-group"><label for="sv-phone">Phone Number</label><input type="tel" id="sv-phone" placeholder="+91 XXXXX XXXXX" required></div>
+        <div class="form-group"><label for="sv-date">Preferred Date</label><input type="date" id="sv-date" required></div>
+        <div class="form-group"><label for="sv-type">Project Type</label>
+          <select id="sv-type"><option value="residential">Residential</option><option value="commercial">Commercial</option><option value="interior">Interior Design</option><option value="renovation">Renovation</option></select>
+        </div>
+        <div class="form-group"><label for="sv-address">Site Address</label><textarea id="sv-address" placeholder="Complete site address..." rows="3"></textarea></div>
+        <button type="submit" class="btn btn-primary" style="width:100%;">Confirm Visit →</button>
+      </form>
+    </div>
+  </div>
+
+  <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank">💬</a>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — JCK Builder's & Interior LLP</title>
+  <meta name="description" content="Browse our visual gallery of construction sites, interior designs, architectural plans, and completed projects.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo"><div class="nav-logo-icon">JCK</div><div class="nav-logo-text">JCK <span>Builder's</span></div></a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="gallery.html" class="active">Gallery</a><a href="process.html">Process</a><a href="testimonials.html">Testimonials</a><a href="contact.html">Contact</a>
+        <div class="nav-cta"><a href="contact.html" class="btn btn-primary">Get Quote</a></div>
+      </div>
+      <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Gallery</span></div>
+      <h1 class="section-title" style="margin-top:12px;">Our Gallery</h1>
+      <p class="section-subtitle light">Visual showcase of our finest construction and interior work</p>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section>
+    <div class="container">
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="construction">Construction</button>
+        <button class="filter-btn" data-filter="interior">Interiors</button>
+        <button class="filter-btn" data-filter="planning">Planning</button>
+        <button class="filter-btn" data-filter="progress">Site Progress</button>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal" data-category="construction">
+          <img src="assets/hero-construction.png" alt="Construction Site">
+          <div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item reveal" data-category="interior">
+          <img src="assets/interior-living.png" alt="Living Room">
+          <div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item reveal" data-category="construction">
+          <img src="assets/project-villa.png" alt="Villa Exterior">
+          <div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item reveal" data-category="interior">
+          <img src="assets/interior-kitchen.png" alt="Kitchen Design">
+          <div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item reveal" data-category="planning">
+          <img src="assets/project-commercial.png" alt="Commercial Building">
+          <div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item reveal" data-category="interior">
+          <img src="assets/interior-bedroom.png" alt="Bedroom Design">
+          <div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item reveal" data-category="progress">
+          <img src="assets/hero-construction.png" alt="Site Progress">
+          <div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item reveal" data-category="construction">
+          <img src="assets/project-commercial.png" alt="Commercial Construction">
+          <div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="cta-title reveal">Like What You <span style="color:var(--gold);">See?</span></h2>
+      <p class="cta-subtitle reveal">Let us create something equally stunning for your space.</p>
+      <div class="cta-buttons reveal"><a href="contact.html" class="btn btn-primary">Start Your Project →</a></div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close">✕</button>
+    <img src="" alt="Gallery Image">
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="nav-logo"><div class="nav-logo-icon">JCK</div><div class="nav-logo-text">JCK <span>Builder's</span></div></a><p>Building excellence and designing dreams since 2010.</p><div class="footer-social"><a href="#">📘</a><a href="#">📷</a><a href="#">💼</a><a href="#">▶️</a></div></div>
+        <div class="footer-column"><h4>Quick Links</h4><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></div>
+        <div class="footer-column"><h4>Services</h4><a href="services.html">Construction</a><a href="services.html">Architecture</a><a href="services.html">Interior Design</a><a href="services.html">Renovation</a></div>
+        <div class="footer-column"><h4>Contact</h4><a href="tel:+919876543210">📞 +91 98765 43210</a><a href="mailto:info@jckbuilders.com">✉️ info@jckbuilders.com</a><a href="#">📍 Bangalore, Karnataka</a></div>
+      </div>
+      <div class="footer-bottom"><p>© 2024 JCK Builder's & Interior LLP. All rights reserved.</p><p>Designed with ❤️</p></div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank">💬</a>
+  <script src="js/main.js"></script>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>

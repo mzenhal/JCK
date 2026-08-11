@@ -1,178 +1,226 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Services — JCK Builder's & Interior LLP</title>
-  <meta name="description" content="Explore JCK Builder's comprehensive services — construction, architecture, interior design, renovation, and project management.">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore JCK Builder's comprehensive services — construction, architecture, interior design, renovation, and project management."
+    />
+    <title>Our Services — JCK Builder's & Interior LLP</title>
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body class="min-w-80 bg-stone-50 font-sans text-slate-800 antialiased">
+    <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-slate-950/80 text-white backdrop-blur-xl">
+      <nav class="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        <a href="index.html" class="flex items-center gap-3" aria-label="JCK Builder's home">
+          <span class="grid size-11 place-items-center rounded-lg bg-amber-400 text-sm font-black tracking-wide text-slate-950">JCK</span>
+          <span class="leading-tight">
+            <span class="block text-base font-bold">JCK Builder's</span>
+            <span class="block text-xs font-medium uppercase tracking-[0.22em] text-amber-200">Interior LLP</span>
+          </span>
+        </a>
 
-  <!-- NAVBAR -->
-  <nav class="navbar" id="navbar">
-    <div class="container">
-      <a href="index.html" class="nav-logo"><div class="nav-logo-icon">JCK</div><div class="nav-logo-text">JCK <span>Builder's</span></div></a>
-      <div class="nav-links" id="nav-links">
-        <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html" class="active">Services</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="process.html">Process</a><a href="testimonials.html">Testimonials</a><a href="contact.html">Contact</a>
-        <div class="nav-cta"><a href="contact.html" class="btn btn-primary">Get Quote</a></div>
-      </div>
-      <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
-    </div>
-  </nav>
+        <button
+          class="inline-flex size-11 items-center justify-center rounded-lg border border-white/15 text-white lg:hidden"
+          data-menu-toggle
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          <span class="h-0.5 w-5 bg-current before:block before:h-0.5 before:w-5 before:-translate-y-2 before:bg-current before:content-[''] after:block after:h-0.5 after:w-5 after:translate-y-1.5 after:bg-current after:content-['']"></span>
+        </button>
 
-  <!-- PAGE HEADER -->
-  <section class="page-header">
-    <div class="container">
-      <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Services</span></div>
-      <h1 class="section-title" style="margin-top:12px;">Our Services</h1>
-      <p class="section-subtitle light">Comprehensive building and design solutions for every need</p>
-    </div>
-  </section>
-
-  <!-- CONSTRUCTION SERVICES -->
-  <div class="service-detail-section">
-    <div class="container">
-      <div class="service-detail-grid reveal">
-        <div class="service-detail-image">
-          <img src="assets/hero-construction.png" alt="Construction Services">
+        <div
+          class="absolute left-4 right-4 top-24 hidden rounded-lg border border-white/10 bg-slate-950 p-4 shadow-2xl lg:static lg:block lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none"
+          data-menu
+        >
+          <div class="flex flex-col gap-2 text-sm font-semibold text-slate-200 lg:flex-row lg:items-center lg:gap-7">
+            <a class="rounded px-3 py-2 hover:bg-white/10 hover:text-amber-200 lg:px-0 lg:hover:bg-transparent" href="index.html">Home</a>
+            <a class="rounded px-3 py-2 hover:bg-white/10 hover:text-amber-200 lg:px-0 lg:hover:bg-transparent" href="about.html">About</a>
+            <a class="rounded px-3 py-2 text-amber-200 hover:bg-white/10 lg:px-0 lg:hover:bg-transparent" href="services.html">Services</a>
+            <a class="rounded px-3 py-2 hover:bg-white/10 hover:text-amber-200 lg:px-0 lg:hover:bg-transparent" href="projects.html">Projects</a>
+            <a class="rounded px-3 py-2 hover:bg-white/10 hover:text-amber-200 lg:px-0 lg:hover:bg-transparent" href="gallery.html">Gallery</a>
+            <a class="rounded px-3 py-2 hover:bg-white/10 hover:text-amber-200 lg:px-0 lg:hover:bg-transparent" href="process.html">Process</a>
+            <a class="rounded px-3 py-2 hover:bg-white/10 hover:text-amber-200 lg:px-0 lg:hover:bg-transparent" href="testimonials.html">Testimonials</a>
+            <a class="rounded px-3 py-2 hover:bg-white/10 hover:text-amber-200 lg:px-0 lg:hover:bg-transparent" href="contact.html">Contact</a>
+            <a class="mt-2 inline-flex min-h-11 items-center justify-center rounded bg-amber-400 px-5 py-3 text-sm font-black text-slate-950 shadow-sm hover:bg-amber-300 lg:mt-0" href="contact.html">Get Quote</a>
+          </div>
         </div>
-        <div class="service-detail-content">
-          <span class="section-label">Construction</span>
-          <h3>Building Construction Services</h3>
-          <p>From foundation to finishing, we deliver end-to-end construction solutions with uncompromising quality. Our team of experienced engineers and skilled workers ensures every structure is built to last.</p>
-          <ul class="service-list">
-            <li>Residential Construction — Individual homes & apartments</li>
-            <li>Villa Construction — Luxury custom-designed villas</li>
-            <li>Commercial Construction — Office buildings & retail spaces</li>
-            <li>Industrial Construction — Warehouses & factory buildings</li>
-            <li>Institutional Projects — Schools, hospitals & community centers</li>
-          </ul>
-          <a href="contact.html" class="btn btn-primary" style="margin-top:24px;">Get Quote →</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="relative overflow-hidden bg-slate-950 pb-16 pt-28 text-white sm:pb-20 lg:pb-24">
+        <img
+          class="absolute inset-0 h-full w-full object-cover opacity-25"
+          src="assets/hero-construction.png"
+          alt=""
+        />
+        <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,6,23,0.96),rgba(15,23,42,0.78),rgba(15,23,42,0.18))]"></div>
+        <div class="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+          <nav class="flex items-center gap-2 text-xs font-black uppercase tracking-[0.22em] text-slate-400">
+            <a class="transition hover:text-amber-200" href="index.html">Home</a>
+            <span>/</span>
+            <span class="text-amber-200">Services</span>
+          </nav>
+          <h1 class="mt-5 text-4xl font-black leading-tight text-white sm:text-5xl lg:text-6xl">Our Services</h1>
+          <p class="mt-5 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">Comprehensive building and design solutions for every need</p>
+        </div>
+      </section>
+
+      <section class="bg-white py-16 sm:py-20 lg:py-28">
+        <div class="mx-auto grid w-full max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:px-8">
+          <div class="relative overflow-hidden rounded-lg">
+            <img class="aspect-[4/3] w-full object-cover" src="assets/hero-construction.png" alt="Construction Services" />
+          </div>
+          <div>
+            <p class="text-xs font-black uppercase tracking-[0.22em] text-amber-600">Construction</p>
+            <h2 class="mt-4 text-3xl font-black leading-tight text-slate-950 sm:text-4xl lg:text-5xl">Building Construction Services</h2>
+            <p class="mt-5 text-lg leading-8 text-slate-600">From foundation to finishing, we deliver end-to-end construction solutions with uncompromising quality. Our team of experienced engineers and skilled workers ensures every structure is built to last.</p>
+            <ul class="mt-6 list-disc space-y-3 pl-5 text-sm leading-7 text-slate-600 marker:text-amber-500">
+              <li>Residential Construction — Individual homes & apartments</li>
+              <li>Villa Construction — Luxury custom-designed villas</li>
+              <li>Commercial Construction — Office buildings & retail spaces</li>
+              <li>Industrial Construction — Warehouses & factory buildings</li>
+              <li>Institutional Projects — Schools, hospitals & community centers</li>
+            </ul>
+            <a class="mt-8 inline-flex min-h-11 w-fit items-center justify-center rounded bg-amber-400 px-5 py-3 text-sm font-black text-slate-950 shadow-sm hover:bg-amber-300" href="contact.html">Get Quote →</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-stone-100 py-16 sm:py-20 lg:py-28">
+        <div class="mx-auto grid w-full max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:px-8">
+          <div class="relative overflow-hidden rounded-lg">
+            <img class="aspect-[4/3] w-full object-cover" src="assets/project-villa.png" alt="Architecture & Planning" />
+          </div>
+          <div>
+            <p class="text-xs font-black uppercase tracking-[0.22em] text-amber-600">Architecture</p>
+            <h2 class="mt-4 text-3xl font-black leading-tight text-slate-950 sm:text-4xl lg:text-5xl">Architecture & Planning</h2>
+            <p class="mt-5 text-lg leading-8 text-slate-600">Our architects blend creativity with precision to create designs that are both aesthetically stunning and structurally sound. Every detail is carefully planned to maximize space, light, and functionality.</p>
+            <ul class="mt-6 list-disc space-y-3 pl-5 text-sm leading-7 text-slate-600 marker:text-amber-500">
+              <li>Floor Planning — Optimized space utilization</li>
+              <li>Structural Design — Safe, durable engineering</li>
+              <li>3D Elevation Design — Photorealistic visualizations</li>
+              <li>Site Analysis — Comprehensive location assessment</li>
+              <li>Building Permits — Complete documentation support</li>
+            </ul>
+            <a class="mt-8 inline-flex min-h-11 w-fit items-center justify-center rounded bg-amber-400 px-5 py-3 text-sm font-black text-slate-950 shadow-sm hover:bg-amber-300" href="contact.html">Get Quote →</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white py-16 sm:py-20 lg:py-28">
+        <div class="mx-auto grid w-full max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:px-8">
+          <div class="relative overflow-hidden rounded-lg">
+            <img class="aspect-[4/3] w-full object-cover" src="assets/interior-living.png" alt="Interior Design" />
+          </div>
+          <div>
+            <p class="text-xs font-black uppercase tracking-[0.22em] text-amber-600">Interiors</p>
+            <h2 class="mt-4 text-3xl font-black leading-tight text-slate-950 sm:text-4xl lg:text-5xl">Interior Design</h2>
+            <p class="mt-5 text-lg leading-8 text-slate-600">Transform your spaces into elegant, functional environments that reflect your personality. Our designers combine modern aesthetics with practical design to create interiors that inspire.</p>
+            <ul class="mt-6 list-disc space-y-3 pl-5 text-sm leading-7 text-slate-600 marker:text-amber-500">
+              <li>Living Room Design — Sophisticated entertainment spaces</li>
+              <li>Kitchen Design — Modern, functional culinary spaces</li>
+              <li>Bedroom Design — Serene, comfortable retreats</li>
+              <li>Office Interiors — Productive work environments</li>
+              <li>Custom Furniture — Bespoke pieces tailored to your space</li>
+            </ul>
+            <a class="mt-8 inline-flex min-h-11 w-fit items-center justify-center rounded bg-amber-400 px-5 py-3 text-sm font-black text-slate-950 shadow-sm hover:bg-amber-300" href="contact.html">Get Quote →</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-stone-100 py-16 sm:py-20 lg:py-28">
+        <div class="mx-auto grid w-full max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:px-8">
+          <div class="relative overflow-hidden rounded-lg">
+            <img class="aspect-[4/3] w-full object-cover" src="assets/interior-kitchen.png" alt="Renovation Services" />
+          </div>
+          <div>
+            <p class="text-xs font-black uppercase tracking-[0.22em] text-amber-600">Renovation</p>
+            <h2 class="mt-4 text-3xl font-black leading-tight text-slate-950 sm:text-4xl lg:text-5xl">Renovation & Remodeling</h2>
+            <p class="mt-5 text-lg leading-8 text-slate-600">Breathe new life into existing spaces with our expert renovation services. Whether it's a complete overhaul or targeted upgrades, we transform outdated properties into modern masterpieces.</p>
+            <ul class="mt-6 list-disc space-y-3 pl-5 text-sm leading-7 text-slate-600 marker:text-amber-500">
+              <li>Home Renovation — Complete home makeovers</li>
+              <li>Office Renovation — Modern workspace upgrades</li>
+              <li>Kitchen Remodeling — Contemporary kitchen transformations</li>
+              <li>Bathroom Renovation — Spa-like bathroom upgrades</li>
+              <li>Structural Repairs — Foundation and structural reinforcement</li>
+            </ul>
+            <a class="mt-8 inline-flex min-h-11 w-fit items-center justify-center rounded bg-amber-400 px-5 py-3 text-sm font-black text-slate-950 shadow-sm hover:bg-amber-300" href="contact.html">Get Quote →</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white py-16 sm:py-20 lg:py-28">
+        <div class="mx-auto grid w-full max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-8">
+          <div>
+            <p class="text-xs font-black uppercase tracking-[0.22em] text-amber-600">Smart Tool</p>
+            <h2 class="mt-4 text-3xl font-black leading-tight text-slate-950 sm:text-4xl lg:text-5xl">Get Instant Cost Estimate</h2>
+            <p class="mt-5 leading-8 text-slate-600">Enter your project details below and get an approximate cost range instantly.</p>
+          </div>
+          <form class="rounded-lg border border-stone-200 bg-white p-5 shadow-sm sm:p-7" data-estimator>
+            <h3 class="text-xl font-black text-slate-950">Construction Cost Calculator</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Quick and easy cost estimation for your next project.</p>
+            <div class="mt-6 grid gap-4 sm:grid-cols-2">
+              <label class="grid gap-2 text-sm font-bold text-slate-800 sm:col-span-2">Plot Area (sq.ft.)
+                <input class="w-full rounded border border-stone-300 bg-white px-4 py-3 text-base font-medium text-slate-900 outline-none focus:border-amber-400 focus:ring-4 focus:ring-amber-200" type="number" min="100" placeholder="e.g. 1200" required data-area />
+              </label>
+              <label class="grid gap-2 text-sm font-bold text-slate-800">Number of Floors
+                <select class="w-full rounded border border-stone-300 bg-white px-4 py-3 text-base font-medium text-slate-900 outline-none focus:border-amber-400 focus:ring-4 focus:ring-amber-200" data-floors>
+                  <option value="1">1 Floor</option>
+                  <option value="2" selected>2 Floors</option>
+                  <option value="3">3 Floors</option>
+                  <option value="4">4 Floors</option>
+                </select>
+              </label>
+              <label class="grid gap-2 text-sm font-bold text-slate-800">Building Type
+                <select class="w-full rounded border border-stone-300 bg-white px-4 py-3 text-base font-medium text-slate-900 outline-none focus:border-amber-400 focus:ring-4 focus:ring-amber-200" data-type>
+                  <option value="2100">Residential</option>
+                  <option value="2800">Villa</option>
+                  <option value="2400">Commercial</option>
+                  <option value="1400">Renovation</option>
+                </select>
+              </label>
+            </div>
+            <button class="mt-5 inline-flex min-h-11 w-full items-center justify-center rounded bg-amber-400 px-5 py-3 text-sm font-black text-slate-950 shadow-sm hover:bg-amber-300" type="submit">Calculate →</button>
+            <p class="mt-5 hidden rounded bg-amber-50 p-4 text-sm font-semibold text-slate-900" data-result></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="bg-slate-950 py-16 text-white sm:py-20 lg:py-28">
+        <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl text-center">
+            <h2 class="text-3xl font-black leading-tight text-white sm:text-4xl lg:text-5xl">Need a Custom <span class="text-amber-400">Solution?</span></h2>
+            <p class="mt-5 leading-8 text-slate-300">Every project is unique. Let's discuss your specific requirements and create a tailored plan.</p>
+            <a class="mt-8 inline-flex min-h-11 items-center justify-center rounded bg-amber-400 px-5 py-3 text-sm font-black text-slate-950 shadow-sm hover:bg-amber-300" href="contact.html">Get Free Consultation →</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-slate-950 py-8 text-white">
+      <div class="mx-auto flex w-full max-w-7xl flex-col justify-between gap-4 px-4 text-sm text-slate-400 sm:flex-row sm:px-6 lg:px-8">
+        <p>© 2026 JCK Builder's & Interior LLP. All rights reserved.</p>
+        <div class="flex gap-5">
+          <a href="services.html">Services</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
         </div>
       </div>
-    </div>
-  </div>
+    </footer>
 
-  <!-- ARCHITECTURE -->
-  <div class="service-detail-section">
-    <div class="container">
-      <div class="service-detail-grid reveal">
-        <div class="service-detail-image">
-          <img src="assets/project-villa.png" alt="Architecture & Planning">
-        </div>
-        <div class="service-detail-content">
-          <span class="section-label">Architecture</span>
-          <h3>Architecture & Planning</h3>
-          <p>Our architects blend creativity with precision to create designs that are both aesthetically stunning and structurally sound. Every detail is carefully planned to maximize space, light, and functionality.</p>
-          <ul class="service-list">
-            <li>Floor Planning — Optimized space utilization</li>
-            <li>Structural Design — Safe, durable engineering</li>
-            <li>3D Elevation Design — Photorealistic visualizations</li>
-            <li>Site Analysis — Comprehensive location assessment</li>
-            <li>Building Permits — Complete documentation support</li>
-          </ul>
-          <a href="contact.html" class="btn btn-primary" style="margin-top:24px;">Get Quote →</a>
-        </div>
-      </div>
-    </div>
-  </div>
+    <a
+      class="fixed bottom-5 right-5 z-40 rounded bg-emerald-500 px-4 py-3 text-sm font-black text-white shadow-xl shadow-emerald-950/20"
+      href="https://wa.me/919876543210"
+      target="_blank"
+      rel="noreferrer"
+    >
+      WhatsApp
+    </a>
 
-  <!-- INTERIOR DESIGN -->
-  <div class="service-detail-section">
-    <div class="container">
-      <div class="service-detail-grid reveal">
-        <div class="service-detail-image">
-          <img src="assets/interior-living.png" alt="Interior Design">
-        </div>
-        <div class="service-detail-content">
-          <span class="section-label">Interiors</span>
-          <h3>Interior Design</h3>
-          <p>Transform your spaces into elegant, functional environments that reflect your personality. Our designers combine modern aesthetics with practical design to create interiors that inspire.</p>
-          <ul class="service-list">
-            <li>Living Room Design — Sophisticated entertainment spaces</li>
-            <li>Kitchen Design — Modern, functional culinary spaces</li>
-            <li>Bedroom Design — Serene, comfortable retreats</li>
-            <li>Office Interiors — Productive work environments</li>
-            <li>Custom Furniture — Bespoke pieces tailored to your space</li>
-          </ul>
-          <a href="contact.html" class="btn btn-primary" style="margin-top:24px;">Get Quote →</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- RENOVATION -->
-  <div class="service-detail-section">
-    <div class="container">
-      <div class="service-detail-grid reveal">
-        <div class="service-detail-image">
-          <img src="assets/interior-kitchen.png" alt="Renovation Services">
-        </div>
-        <div class="service-detail-content">
-          <span class="section-label">Renovation</span>
-          <h3>Renovation & Remodeling</h3>
-          <p>Breathe new life into existing spaces with our expert renovation services. Whether it's a complete overhaul or targeted upgrades, we transform outdated properties into modern masterpieces.</p>
-          <ul class="service-list">
-            <li>Home Renovation — Complete home makeovers</li>
-            <li>Office Renovation — Modern workspace upgrades</li>
-            <li>Kitchen Remodeling — Contemporary kitchen transformations</li>
-            <li>Bathroom Renovation — Spa-like bathroom upgrades</li>
-            <li>Structural Repairs — Foundation and structural reinforcement</li>
-          </ul>
-          <a href="contact.html" class="btn btn-primary" style="margin-top:24px;">Get Quote →</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- COST ESTIMATOR -->
-  <section class="section-gray">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Smart Tool</span>
-        <h2 class="section-title">Get Instant Cost Estimate</h2>
-        <p class="section-subtitle">Enter your project details below and get an approximate cost range instantly.</p>
-      </div>
-      <div class="estimator-card reveal">
-        <h3>Construction Cost Calculator</h3>
-        <p>Quick and easy cost estimation for your next project.</p>
-        <form id="estimator-form">
-          <div class="form-group"><label for="plot-area">Plot Area (sq.ft.)</label><input type="number" id="plot-area" placeholder="e.g. 1200" min="100" required></div>
-          <div class="form-group"><label for="num-floors">Number of Floors</label><select id="num-floors"><option value="1">1 Floor</option><option value="2" selected>2 Floors</option><option value="3">3 Floors</option><option value="4">4 Floors</option></select></div>
-          <div class="form-group"><label for="building-type">Building Type</label><select id="building-type"><option value="residential">Residential</option><option value="villa">Villa</option><option value="commercial">Commercial</option><option value="renovation">Renovation</option></select></div>
-          <button type="submit" class="btn btn-primary" style="width:100%;">Calculate →</button>
-        </form>
-        <div class="estimate-result" id="estimate-result"><div class="amount"></div><div class="note"></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-section">
-    <div class="container">
-      <h2 class="cta-title reveal">Need a Custom <span style="color:var(--gold);">Solution?</span></h2>
-      <p class="cta-subtitle reveal">Every project is unique. Let's discuss your specific requirements and create a tailored plan.</p>
-      <div class="cta-buttons reveal"><a href="contact.html" class="btn btn-primary">Get Free Consultation →</a></div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand"><a href="index.html" class="nav-logo"><div class="nav-logo-icon">JCK</div><div class="nav-logo-text">JCK <span>Builder's</span></div></a><p>Building excellence and designing dreams since 2010.</p><div class="footer-social"><a href="#">📘</a><a href="#">📷</a><a href="#">💼</a><a href="#">▶️</a></div></div>
-        <div class="footer-column"><h4>Quick Links</h4><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></div>
-        <div class="footer-column"><h4>Services</h4><a href="services.html">Construction</a><a href="services.html">Architecture</a><a href="services.html">Interior Design</a><a href="services.html">Renovation</a></div>
-        <div class="footer-column"><h4>Contact</h4><a href="tel:+919876543210">📞 +91 98765 43210</a><a href="mailto:info@jckbuilders.com">✉️ info@jckbuilders.com</a><a href="#">📍 Bangalore, Karnataka</a></div>
-      </div>
-      <div class="footer-bottom"><p>© 2024 JCK Builder's & Interior LLP. All rights reserved.</p><p>Designed with ❤️</p></div>
-    </div>
-  </footer>
-
-  <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank">💬</a>
-  <script src="js/main.js"></script>
-  <script src="js/estimator.js"></script>
-</body>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>

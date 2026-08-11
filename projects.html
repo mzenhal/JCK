@@ -1,159 +1,214 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects — JCK Builder's & Interior LLP</title>
-  <meta name="description" content="Browse JCK Builder's portfolio of premium construction and interior design projects across residential, commercial, and renovation categories.">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse JCK Builder's portfolio of premium construction and interior design projects across residential, commercial, and renovation categories."
+    />
+    <title>Projects — JCK Builder's & Interior LLP</title>
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body class="min-w-80 bg-stone-50 font-sans text-slate-800 antialiased">
+    <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-slate-950/80 text-white backdrop-blur-xl">
+      <nav class="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        <a href="index.html" class="flex items-center gap-3" aria-label="JCK Builder's home">
+          <span class="grid size-11 place-items-center rounded-lg bg-amber-400 text-sm font-black tracking-wide text-slate-950">JCK</span>
+          <span class="leading-tight">
+            <span class="block text-base font-bold">JCK Builder's</span>
+            <span class="block text-xs font-medium uppercase tracking-[0.22em] text-amber-200">Interior LLP</span>
+          </span>
+        </a>
 
-  <!-- NAVBAR -->
-  <nav class="navbar" id="navbar">
-    <div class="container">
-      <a href="index.html" class="nav-logo"><div class="nav-logo-icon">JCK</div><div class="nav-logo-text">JCK <span>Builder's</span></div></a>
-      <div class="nav-links" id="nav-links">
-        <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html" class="active">Projects</a><a href="gallery.html">Gallery</a><a href="process.html">Process</a><a href="testimonials.html">Testimonials</a><a href="contact.html">Contact</a>
-        <div class="nav-cta"><a href="contact.html" class="btn btn-primary">Get Quote</a></div>
+        <button
+          class="inline-flex size-11 items-center justify-center rounded-lg border border-white/15 text-white lg:hidden"
+          data-menu-toggle
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          <span class="h-0.5 w-5 bg-current before:block before:h-0.5 before:w-5 before:-translate-y-2 before:bg-current before:content-[''] after:block after:h-0.5 after:w-5 after:translate-y-1.5 after:bg-current after:content-['']"></span>
+        </button>
+
+        <div
+          class="absolute left-4 right-4 top-24 hidden rounded-lg border border-white/10 bg-slate-950 p-4 shadow-2xl lg:static lg:block lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none"
+          data-menu
+        >
+          <div class="flex flex-col gap-2 text-sm font-semibold text-slate-200 lg:flex-row lg:items-center lg:gap-7">
+            <a class="rounded px-3 py-2 hover:bg-white/10 hover:text-amber-200 lg:px-0 lg:hover:bg-transparent" href="index.html">Home</a>
+            <a class="rounded px-3 py-2 hover:bg-white/10 hover:text-amber-200 lg:px-0 lg:hover:bg-transparent" href="about.html">About</a>
+            <a class="rounded px-3 py-2 hover:bg-white/10 hover:text-amber-200 lg:px-0 lg:hover:bg-transparent" href="services.html">Services</a>
+            <a class="rounded px-3 py-2 text-amber-200 hover:bg-white/10 lg:px-0 lg:hover:bg-transparent" href="projects.html">Projects</a>
+            <a class="rounded px-3 py-2 hover:bg-white/10 hover:text-amber-200 lg:px-0 lg:hover:bg-transparent" href="gallery.html">Gallery</a>
+            <a class="rounded px-3 py-2 hover:bg-white/10 hover:text-amber-200 lg:px-0 lg:hover:bg-transparent" href="process.html">Process</a>
+            <a class="rounded px-3 py-2 hover:bg-white/10 hover:text-amber-200 lg:px-0 lg:hover:bg-transparent" href="testimonials.html">Testimonials</a>
+            <a class="rounded px-3 py-2 hover:bg-white/10 hover:text-amber-200 lg:px-0 lg:hover:bg-transparent" href="contact.html">Contact</a>
+            <a class="mt-2 inline-flex min-h-11 items-center justify-center rounded bg-amber-400 px-5 py-3 text-sm font-black text-slate-950 shadow-sm hover:bg-amber-300 lg:mt-0" href="contact.html">Get Quote</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="relative overflow-hidden bg-slate-950 pb-16 pt-28 text-white sm:pb-20 lg:pb-24">
+        <img
+          class="absolute inset-0 h-full w-full object-cover opacity-25"
+          src="assets/hero-construction.png"
+          alt=""
+        />
+        <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,6,23,0.96),rgba(15,23,42,0.78),rgba(15,23,42,0.18))]"></div>
+        <div class="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+          <nav class="flex items-center gap-2 text-xs font-black uppercase tracking-[0.22em] text-slate-400">
+            <a class="transition hover:text-amber-200" href="index.html">Home</a>
+            <span>/</span>
+            <span class="text-amber-200">Projects</span>
+          </nav>
+          <h1 class="mt-5 text-4xl font-black leading-tight text-white sm:text-5xl lg:text-6xl">Our Projects</h1>
+          <p class="mt-5 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">A showcase of our finest construction and design work</p>
+        </div>
+      </section>
+
+      <section class="bg-white py-16 sm:py-20 lg:py-28">
+        <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8" data-filter-group>
+          <div class="flex flex-wrap items-center justify-center gap-3">
+            <button class="inline-flex min-h-11 items-center justify-center rounded bg-amber-400 px-5 py-3 text-sm font-black text-slate-950 shadow-sm hover:bg-amber-300" type="button" data-filter="all">All Projects</button>
+            <button class="inline-flex min-h-11 items-center justify-center rounded border border-slate-300 px-5 py-3 text-sm font-black text-slate-700 hover:border-amber-500 hover:text-amber-700" type="button" data-filter="residential">Residential</button>
+            <button class="inline-flex min-h-11 items-center justify-center rounded border border-slate-300 px-5 py-3 text-sm font-black text-slate-700 hover:border-amber-500 hover:text-amber-700" type="button" data-filter="commercial">Commercial</button>
+            <button class="inline-flex min-h-11 items-center justify-center rounded border border-slate-300 px-5 py-3 text-sm font-black text-slate-700 hover:border-amber-500 hover:text-amber-700" type="button" data-filter="interior">Interiors</button>
+            <button class="inline-flex min-h-11 items-center justify-center rounded border border-slate-300 px-5 py-3 text-sm font-black text-slate-700 hover:border-amber-500 hover:text-amber-700" type="button" data-filter="ongoing">Ongoing</button>
+          </div>
+          <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            <article class="group overflow-hidden rounded-lg border border-stone-200 bg-stone-50 shadow-sm transition hover:-translate-y-1 hover:shadow-xl" data-category="residential">
+              <div class="relative aspect-[4/3] overflow-hidden">
+                <img class="h-full w-full object-cover transition duration-300 group-hover:scale-105" src="assets/project-villa.png" alt="Sunrise Luxury Villa" />
+                <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,6,23,0),rgba(2,6,23,0.85))]"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                  <span class="inline-block rounded bg-amber-400 px-2 py-1 text-[0.65rem] font-black uppercase tracking-[0.18em] text-slate-950">Residential</span>
+                  <h3 class="mt-3 text-xl font-black">Sunrise Luxury Villa</h3>
+                  <p class="mt-1 text-xs font-semibold text-slate-200">📍 Bangalore, Karnataka</p>
+                </div>
+              </div>
+            </article>
+            <article class="group overflow-hidden rounded-lg border border-stone-200 bg-stone-50 shadow-sm transition hover:-translate-y-1 hover:shadow-xl" data-category="commercial">
+              <div class="relative aspect-[4/3] overflow-hidden">
+                <img class="h-full w-full object-cover transition duration-300 group-hover:scale-105" src="assets/project-commercial.png" alt="Nexus Business Tower" />
+                <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,6,23,0),rgba(2,6,23,0.85))]"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                  <span class="inline-block rounded bg-amber-400 px-2 py-1 text-[0.65rem] font-black uppercase tracking-[0.18em] text-slate-950">Commercial</span>
+                  <h3 class="mt-3 text-xl font-black">Nexus Business Tower</h3>
+                  <p class="mt-1 text-xs font-semibold text-slate-200">📍 Hyderabad, Telangana</p>
+                </div>
+              </div>
+            </article>
+            <article class="group overflow-hidden rounded-lg border border-stone-200 bg-stone-50 shadow-sm transition hover:-translate-y-1 hover:shadow-xl" data-category="interior">
+              <div class="relative aspect-[4/3] overflow-hidden">
+                <img class="h-full w-full object-cover transition duration-300 group-hover:scale-105" src="assets/interior-kitchen.png" alt="Modern Kitchen" />
+                <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,6,23,0),rgba(2,6,23,0.85))]"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                  <span class="inline-block rounded bg-amber-400 px-2 py-1 text-[0.65rem] font-black uppercase tracking-[0.18em] text-slate-950">Interior</span>
+                  <h3 class="mt-3 text-xl font-black">Modern Kitchen Redesign</h3>
+                  <p class="mt-1 text-xs font-semibold text-slate-200">📍 Mumbai, Maharashtra</p>
+                </div>
+              </div>
+            </article>
+            <article class="group overflow-hidden rounded-lg border border-stone-200 bg-stone-50 shadow-sm transition hover:-translate-y-1 hover:shadow-xl" data-category="residential">
+              <div class="relative aspect-[4/3] overflow-hidden">
+                <img class="h-full w-full object-cover transition duration-300 group-hover:scale-105" src="assets/interior-living.png" alt="Panorama Heights" />
+                <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,6,23,0),rgba(2,6,23,0.85))]"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                  <span class="inline-block rounded bg-amber-400 px-2 py-1 text-[0.65rem] font-black uppercase tracking-[0.18em] text-slate-950">Residential</span>
+                  <h3 class="mt-3 text-xl font-black">Panorama Heights Apartments</h3>
+                  <p class="mt-1 text-xs font-semibold text-slate-200">📍 Chennai, Tamil Nadu</p>
+                </div>
+              </div>
+            </article>
+            <article class="group overflow-hidden rounded-lg border border-stone-200 bg-stone-50 shadow-sm transition hover:-translate-y-1 hover:shadow-xl" data-category="interior">
+              <div class="relative aspect-[4/3] overflow-hidden">
+                <img class="h-full w-full object-cover transition duration-300 group-hover:scale-105" src="assets/interior-bedroom.png" alt="Master Bedroom Suite" />
+                <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,6,23,0),rgba(2,6,23,0.85))]"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                  <span class="inline-block rounded bg-amber-400 px-2 py-1 text-[0.65rem] font-black uppercase tracking-[0.18em] text-slate-950">Interior</span>
+                  <h3 class="mt-3 text-xl font-black">Master Bedroom Suite</h3>
+                  <p class="mt-1 text-xs font-semibold text-slate-200">📍 Pune, Maharashtra</p>
+                </div>
+              </div>
+            </article>
+            <article class="group overflow-hidden rounded-lg border border-stone-200 bg-stone-50 shadow-sm transition hover:-translate-y-1 hover:shadow-xl" data-category="ongoing">
+              <div class="relative aspect-[4/3] overflow-hidden">
+                <img class="h-full w-full object-cover transition duration-300 group-hover:scale-105" src="assets/hero-construction.png" alt="Ongoing Project" />
+                <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,6,23,0),rgba(2,6,23,0.85))]"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                  <span class="inline-block rounded bg-amber-400 px-2 py-1 text-[0.65rem] font-black uppercase tracking-[0.18em] text-slate-950">Ongoing</span>
+                  <h3 class="mt-3 text-xl font-black">Skyline Residences</h3>
+                  <p class="mt-1 text-xs font-semibold text-slate-200">📍 Bangalore, Karnataka</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-stone-100 py-16 sm:py-20 lg:py-28">
+        <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl text-center">
+            <p class="text-xs font-black uppercase tracking-[0.22em] text-amber-600">Project Spotlight</p>
+            <h2 class="mt-4 text-3xl font-black leading-tight text-slate-950 sm:text-4xl lg:text-5xl">Sunrise Luxury Villa</h2>
+            <p class="mt-5 leading-8 text-slate-600">A 4,500 sq.ft. luxury villa with modern amenities, landscaped garden, and private pool.</p>
+          </div>
+          <div class="mx-auto mt-10 grid w-full max-w-7xl gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+            <div class="relative overflow-hidden rounded-lg">
+              <img class="aspect-[4/3] w-full object-cover" src="assets/project-villa.png" alt="Sunrise Villa" />
+            </div>
+            <div>
+              <p class="text-xs font-black uppercase tracking-[0.22em] text-amber-600">Completed — 2024</p>
+              <h3 class="mt-4 text-2xl font-black leading-tight text-slate-950 sm:text-3xl">Project Overview</h3>
+              <p class="mt-5 leading-8 text-slate-600">This luxury villa in Bangalore features contemporary architecture with clean geometric lines, floor-to-ceiling windows, and a stunning infinity pool. The interiors were designed with a neutral palette accented by gold fixtures.</p>
+              <div class="mt-6 grid gap-3 sm:grid-cols-2">
+                <div class="flex items-center gap-3 rounded-lg border border-stone-200 bg-stone-50 p-4 text-sm font-bold text-slate-800"><span class="grid size-6 shrink-0 place-items-center rounded-full bg-amber-400 text-xs font-black text-slate-950">✓</span>4,500 sq.ft. Built-up</div>
+                <div class="flex items-center gap-3 rounded-lg border border-stone-200 bg-stone-50 p-4 text-sm font-bold text-slate-800"><span class="grid size-6 shrink-0 place-items-center rounded-full bg-amber-400 text-xs font-black text-slate-950">✓</span>5 Bedrooms</div>
+                <div class="flex items-center gap-3 rounded-lg border border-stone-200 bg-stone-50 p-4 text-sm font-bold text-slate-800"><span class="grid size-6 shrink-0 place-items-center rounded-full bg-amber-400 text-xs font-black text-slate-950">✓</span>Private Pool</div>
+                <div class="flex items-center gap-3 rounded-lg border border-stone-200 bg-stone-50 p-4 text-sm font-bold text-slate-800"><span class="grid size-6 shrink-0 place-items-center rounded-full bg-amber-400 text-xs font-black text-slate-950">✓</span>Smart Home</div>
+                <div class="flex items-center gap-3 rounded-lg border border-stone-200 bg-stone-50 p-4 text-sm font-bold text-slate-800"><span class="grid size-6 shrink-0 place-items-center rounded-full bg-amber-400 text-xs font-black text-slate-950">✓</span>Landscaped Garden</div>
+                <div class="flex items-center gap-3 rounded-lg border border-stone-200 bg-stone-50 p-4 text-sm font-bold text-slate-800"><span class="grid size-6 shrink-0 place-items-center rounded-full bg-amber-400 text-xs font-black text-slate-950">✓</span>3-Car Garage</div>
+              </div>
+              <a class="mt-8 inline-flex min-h-11 w-fit items-center justify-center rounded bg-amber-400 px-5 py-3 text-sm font-black text-slate-950 shadow-sm hover:bg-amber-300" href="contact.html">Start Similar Project →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-slate-950 py-16 text-white sm:py-20 lg:py-28">
+        <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl text-center">
+            <h2 class="text-3xl font-black leading-tight text-white sm:text-4xl lg:text-5xl">Have a Project in <span class="text-amber-400">Mind?</span></h2>
+            <p class="mt-5 leading-8 text-slate-300">Let's bring your vision to life. Get a free consultation with our experts.</p>
+            <a class="mt-8 inline-flex min-h-11 items-center justify-center rounded bg-amber-400 px-5 py-3 text-sm font-black text-slate-950 shadow-sm hover:bg-amber-300" href="contact.html">Get Free Consultation →</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-slate-950 py-8 text-white">
+      <div class="mx-auto flex w-full max-w-7xl flex-col justify-between gap-4 px-4 text-sm text-slate-400 sm:flex-row sm:px-6 lg:px-8">
+        <p>© 2026 JCK Builder's & Interior LLP. All rights reserved.</p>
+        <div class="flex gap-5">
+          <a href="services.html">Services</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
       </div>
-      <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
-    </div>
-  </nav>
+    </footer>
 
-  <!-- PAGE HEADER -->
-  <section class="page-header">
-    <div class="container">
-      <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Projects</span></div>
-      <h1 class="section-title" style="margin-top:12px;">Our Projects</h1>
-      <p class="section-subtitle light">A showcase of our finest construction and design work</p>
-    </div>
-  </section>
+    <a
+      class="fixed bottom-5 right-5 z-40 rounded bg-emerald-500 px-4 py-3 text-sm font-black text-white shadow-xl shadow-emerald-950/20"
+      href="https://wa.me/919876543210"
+      target="_blank"
+      rel="noreferrer"
+    >
+      WhatsApp
+    </a>
 
-  <!-- PORTFOLIO -->
-  <section>
-    <div class="container">
-      <div class="filter-bar reveal">
-        <button class="filter-btn active" data-filter="all">All Projects</button>
-        <button class="filter-btn" data-filter="residential">Residential</button>
-        <button class="filter-btn" data-filter="commercial">Commercial</button>
-        <button class="filter-btn" data-filter="interior">Interiors</button>
-        <button class="filter-btn" data-filter="ongoing">Ongoing</button>
-      </div>
-      <div class="projects-grid">
-        <!-- Project 1 -->
-        <div class="project-card reveal" data-category="residential">
-          <img src="assets/project-villa.png" alt="Sunrise Luxury Villa">
-          <div class="project-card-overlay">
-            <span class="project-type">Residential</span>
-            <h3>Sunrise Luxury Villa</h3>
-            <span class="project-location">📍 Bangalore, Karnataka</span>
-          </div>
-        </div>
-        <!-- Project 2 -->
-        <div class="project-card reveal" data-category="commercial">
-          <img src="assets/project-commercial.png" alt="Nexus Business Tower">
-          <div class="project-card-overlay">
-            <span class="project-type">Commercial</span>
-            <h3>Nexus Business Tower</h3>
-            <span class="project-location">📍 Hyderabad, Telangana</span>
-          </div>
-        </div>
-        <!-- Project 3 -->
-        <div class="project-card reveal" data-category="interior">
-          <img src="assets/interior-kitchen.png" alt="Modern Kitchen">
-          <div class="project-card-overlay">
-            <span class="project-type">Interior</span>
-            <h3>Modern Kitchen Redesign</h3>
-            <span class="project-location">📍 Mumbai, Maharashtra</span>
-          </div>
-        </div>
-        <!-- Project 4 -->
-        <div class="project-card reveal" data-category="residential">
-          <img src="assets/interior-living.png" alt="Panorama Heights">
-          <div class="project-card-overlay">
-            <span class="project-type">Residential</span>
-            <h3>Panorama Heights Apartments</h3>
-            <span class="project-location">📍 Chennai, Tamil Nadu</span>
-          </div>
-        </div>
-        <!-- Project 5 -->
-        <div class="project-card reveal" data-category="interior">
-          <img src="assets/interior-bedroom.png" alt="Master Bedroom Suite">
-          <div class="project-card-overlay">
-            <span class="project-type">Interior</span>
-            <h3>Master Bedroom Suite</h3>
-            <span class="project-location">📍 Pune, Maharashtra</span>
-          </div>
-        </div>
-        <!-- Project 6 -->
-        <div class="project-card reveal" data-category="ongoing">
-          <img src="assets/hero-construction.png" alt="Ongoing Project">
-          <div class="project-card-overlay">
-            <span class="project-type">Ongoing</span>
-            <h3>Skyline Residences</h3>
-            <span class="project-location">📍 Bangalore, Karnataka</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECT DETAILS SECTION -->
-  <section class="section-gray">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Project Spotlight</span>
-        <h2 class="section-title">Sunrise Luxury Villa</h2>
-        <p class="section-subtitle">A 4,500 sq.ft. luxury villa with modern amenities, landscaped garden, and private pool.</p>
-      </div>
-      <div class="about-grid">
-        <div class="about-image reveal">
-          <img src="assets/project-villa.png" alt="Sunrise Villa">
-        </div>
-        <div class="about-text reveal">
-          <span class="section-label">Completed — 2024</span>
-          <h3>Project Overview</h3>
-          <p>This luxury villa in Bangalore features contemporary architecture with clean geometric lines, floor-to-ceiling windows, and a stunning infinity pool. The interiors were designed with a neutral palette accented by gold fixtures.</p>
-          <div class="about-features">
-            <div class="about-feature-item"><div class="icon">✓</div><span>4,500 sq.ft. Built-up</span></div>
-            <div class="about-feature-item"><div class="icon">✓</div><span>5 Bedrooms</span></div>
-            <div class="about-feature-item"><div class="icon">✓</div><span>Private Pool</span></div>
-            <div class="about-feature-item"><div class="icon">✓</div><span>Smart Home</span></div>
-            <div class="about-feature-item"><div class="icon">✓</div><span>Landscaped Garden</span></div>
-            <div class="about-feature-item"><div class="icon">✓</div><span>3-Car Garage</span></div>
-          </div>
-          <a href="contact.html" class="btn btn-primary">Start Similar Project →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-section">
-    <div class="container">
-      <h2 class="cta-title reveal">Have a Project in <span style="color:var(--gold);">Mind?</span></h2>
-      <p class="cta-subtitle reveal">Let's bring your vision to life. Get a free consultation with our experts.</p>
-      <div class="cta-buttons reveal"><a href="contact.html" class="btn btn-primary">Get Free Consultation →</a></div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand"><a href="index.html" class="nav-logo"><div class="nav-logo-icon">JCK</div><div class="nav-logo-text">JCK <span>Builder's</span></div></a><p>Building excellence and designing dreams since 2010.</p><div class="footer-social"><a href="#">📘</a><a href="#">📷</a><a href="#">💼</a><a href="#">▶️</a></div></div>
-        <div class="footer-column"><h4>Quick Links</h4><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></div>
-        <div class="footer-column"><h4>Services</h4><a href="services.html">Construction</a><a href="services.html">Architecture</a><a href="services.html">Interior Design</a><a href="services.html">Renovation</a></div>
-        <div class="footer-column"><h4>Contact</h4><a href="tel:+919876543210">📞 +91 98765 43210</a><a href="mailto:info@jckbuilders.com">✉️ info@jckbuilders.com</a><a href="#">📍 Bangalore, Karnataka</a></div>
-      </div>
-      <div class="footer-bottom"><p>© 2024 JCK Builder's & Interior LLP. All rights reserved.</p><p>Designed with ❤️</p></div>
-    </div>
-  </footer>
-
-  <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank">💬</a>
-  <script src="js/main.js"></script>
-  <script src="js/portfolio.js"></script>
-</body>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>

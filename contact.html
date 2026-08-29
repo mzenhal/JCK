@@ -10,153 +10,169 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar" id="navbar">
-    <div class="container">
-      <a href="index.html" class="nav-logo"><img class="nav-logo-mark" src="assets/jck-logo-transparent.png" alt="JCK Builders & Interior LLP" /></a>
-      <div class="nav-links" id="nav-links">
-        <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="contact.html" class="active">Contact</a>
-        <div class="nav-cta"><a href="contact.html" class="btn btn-primary">Get Quote</a></div>
+    <!-- NAVBAR -->
+  <header class="fixed inset-x-0 top-0 z-50 text-[#efede7] transition-[background,background-color,border-color,box-shadow,backdrop-filter] duration-500 data-[state=active]:border-b data-[state=active]:border-[rgb(232_185_35_/_0.16)] data-[state=active]:bg-[rgb(38_40_43_/_0.30)] data-[state=active]:shadow-[0_12px_40px_rgb(47_41_35_/_0.22)] data-[state=active]:backdrop-blur-xl" data-site-header>
+    <nav class="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <a href="index.html" class="flex items-center gap-3" aria-label="JCK Builder's home">
+        <img class="h-16 w-auto max-w-[15rem] flex-none object-contain sm:max-w-[18rem]" src="assets/jck-logo-transparent.png" alt="JCK Builders & Interior LLP" />
+      </a>
+      <button class="inline-flex size-11 items-center justify-center rounded-lg border border-[rgb(239_237_231_/_0.24)] bg-[rgb(239_237_231_/_0.07)] text-[#efede7] backdrop-blur lg:hidden" data-menu-toggle aria-label="Open navigation" aria-expanded="false">
+        <span class="h-0.5 w-5 bg-current before:block before:h-0.5 before:w-5 before:-translate-y-2 before:bg-current before:content-[''] after:block after:h-0.5 after:w-5 after:translate-y-1.5 after:bg-current after:content-['']"></span>
+      </button>
+      <div class="absolute left-4 right-4 top-24 hidden rounded-lg p-4 lg:static lg:block lg:p-0 max-lg:border max-lg:border-[rgb(239_237_231_/_0.14)] max-lg:bg-[rgb(38_40_43_/_0.95)] max-lg:shadow-[0_22px_70px_rgb(38_40_43_/_0.3)] max-lg:backdrop-blur-2xl" data-menu>
+        <div class="relative flex flex-col gap-1 text-sm font-semibold text-[#efede7] lg:flex-row lg:items-center lg:gap-2">
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="index.html">Home</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="about.html">About</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="services.html">Services</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="projects.html">Projects</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="gallery.html">Gallery</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="process.html">Process</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="testimonials.html">Testimonials</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#e8b923] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-100 before:rounded-full before:bg-[#e8b923] before:content-['']" href="contact.html">Contact</a>
+          <a class="mt-2 inline-flex min-h-11 items-center justify-center rounded bg-[#e8b923] px-5 py-3 text-sm font-black text-[#26282b] shadow-sm transition hover:bg-[color-mix(in_srgb,#e8b923_86%,#efede7)] lg:ml-2 lg:mt-0" href="contact.html">Get Quote</a>
+        </div>
       </div>
-      <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
   <!-- PAGE HEADER -->
   <section class="page-header">
     <div class="container">
       <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Contact</span></div>
-      <h1 class="section-title" style="margin-top:12px;">Contact Us</h1>
-      <p class="section-subtitle light">Let's discuss your project. Reach out to us anytime.</p>
+      <h1 class="page-title">Contact Us</h1>
+      <p class="page-subtitle">Let's discuss your project. Reach out to us anytime.</p>
     </div>
   </section>
 
   <!-- CONTACT SECTION -->
-  <section>
-    <div class="container">
-      <div class="contact-grid">
+  <section class="bg-[#efede7] py-16 sm:py-20 lg:py-24">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
+
         <!-- Left — Info -->
         <div>
           <div class="reveal">
-            <span class="section-label">Get in Touch</span>
-            <h2 class="section-title">We'd Love to Hear From You</h2>
-            <p class="section-subtitle" style="margin-bottom:32px;">Whether you're planning a new construction, renovation, or interior design project, our team is ready to help. Reach out through any of the channels below.</p>
+            <p class="text-xs font-black uppercase tracking-[0.22em] text-[#e8b923]">Get in Touch</p>
+            <h2 class="mt-4 text-3xl font-black leading-tight text-[#26282b] sm:text-4xl lg:text-5xl">We'd Love to Hear From You</h2>
+            <p class="mt-5 max-w-xl leading-8 text-[#3a3c3f]">Whether you're planning a new construction, renovation, or interior design project, our team is ready to help. Reach out through any of the channels below.</p>
           </div>
-          <div class="contact-info-cards reveal">
-            <div class="contact-info-card">
-              <div class="icon">📞</div>
-              <h4>Phone</h4>
-              <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+
+          <div class="mt-8 grid gap-4 sm:grid-cols-2">
+            <div class="reveal rounded-lg border border-[rgb(38_40_43_/_0.12)] bg-[#f8f6f0] p-5 shadow-sm">
+              <div class="grid size-11 place-items-center rounded-lg bg-[rgb(232_185_35_/_0.16)] text-lg font-black text-[#b88f17]">+</div>
+              <h3 class="mt-4 text-base font-black text-[#26282b]">Phone</h3>
+              <p class="mt-2 text-sm leading-6 text-[#3a3c3f]"><a href="tel:+919876543210">+91 98765 43210</a></p>
             </div>
-            <div class="contact-info-card">
-              <div class="icon">✉️</div>
-              <h4>Email</h4>
-              <p><a href="mailto:info@jckbuilders.com">info@jckbuilders.com</a></p>
+            <div class="reveal rounded-lg border border-[rgb(38_40_43_/_0.12)] bg-[#f8f6f0] p-5 shadow-sm">
+              <div class="grid size-11 place-items-center rounded-lg bg-[rgb(232_185_35_/_0.16)] text-lg font-black text-[#b88f17]">@</div>
+              <h3 class="mt-4 text-base font-black text-[#26282b]">Email</h3>
+              <p class="mt-2 text-sm leading-6 text-[#3a3c3f]"><a href="mailto:info@jckbuilders.com">info@jckbuilders.com</a></p>
             </div>
-            <div class="contact-info-card">
-              <div class="icon">📍</div>
-              <h4>Office</h4>
-              <p>JCK Builder's, MG Road,<br>Bangalore, Karnataka 560001</p>
+            <div class="reveal rounded-lg border border-[rgb(38_40_43_/_0.12)] bg-[#f8f6f0] p-5 shadow-sm">
+              <div class="grid size-11 place-items-center rounded-lg bg-[rgb(232_185_35_/_0.16)] text-lg font-black text-[#b88f17]">&#8962;</div>
+              <h3 class="mt-4 text-base font-black text-[#26282b]">Office</h3>
+              <p class="mt-2 text-sm leading-6 text-[#3a3c3f]"><span class="block">JCK Builder's, MG Road,</span><span class="block">Bangalore, Karnataka 560001</span></p>
             </div>
-            <div class="contact-info-card">
-              <div class="icon">⏰</div>
-              <h4>Working Hours</h4>
-              <p>Mon — Sat: 9:00 AM — 7:00 PM<br>Sunday: By Appointment</p>
+            <div class="reveal rounded-lg border border-[rgb(38_40_43_/_0.12)] bg-[#f8f6f0] p-5 shadow-sm">
+              <div class="grid size-11 place-items-center rounded-lg bg-[rgb(232_185_35_/_0.16)] text-lg font-black text-[#b88f17]">&#9687;</div>
+              <h3 class="mt-4 text-base font-black text-[#26282b]">Working Hours</h3>
+              <p class="mt-2 text-sm leading-6 text-[#3a3c3f]"><span class="block">Mon — Sat: 9:00 AM — 7:00 PM</span><span class="block">Sunday: By Appointment</span></p>
             </div>
           </div>
 
           <!-- WhatsApp CTA -->
-          <div class="reveal" style="margin-top:16px;">
-            <a href="https://wa.me/919876543210?text=Hi%20JCK%20Builder's!%20I'm%20interested%20in%20your%20services." target="_blank" class="btn btn-primary" style="background:#25D366;width:100%;font-size:1rem;">
-              <span class="whatsapp-label"><svg class="whatsapp-icon" width="22" height="22" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path fill="currentColor" d="M16.01 3.2A12.7 12.7 0 0 0 5.2 22.57L3.6 28.8l6.38-1.54A12.69 12.69 0 1 0 16.01 3.2Zm0 2.35a10.34 10.34 0 0 1 8.75 15.87 10.35 10.35 0 0 1-13.98 3.44l-.45-.27-3.66.88.92-3.56-.3-.47A10.34 10.34 0 0 1 16.01 5.55Zm-4.16 5.1c-.23 0-.59.08-.9.43-.31.34-1.18 1.15-1.18 2.8 0 1.64 1.21 3.23 1.38 3.45.17.23 2.34 3.75 5.77 5.1 2.85 1.13 3.43.91 4.05.85.62-.06 2-.82 2.28-1.61.28-.8.28-1.48.2-1.62-.08-.14-.31-.23-.65-.4-.34-.17-2-.98-2.31-1.09-.31-.11-.54-.17-.76.17-.23.34-.88 1.09-1.08 1.31-.2.23-.4.26-.73.09-.34-.17-1.43-.53-2.73-1.68-1.01-.9-1.69-2.01-1.89-2.35-.2-.34-.02-.53.15-.7.16-.15.34-.4.51-.6.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.08-.17-.76-1.84-1.05-2.51-.28-.66-.56-.56-.76-.57h-.66Z" /></svg><span>Chat on WhatsApp</span></span>
+          <div class="reveal mt-4">
+            <a class="inline-flex min-h-11 w-full items-center justify-center gap-2 rounded bg-[#25d366] px-5 py-3 text-sm font-black text-[#0b2f18] shadow-sm transition hover:-translate-y-0.5 hover:bg-[color-mix(in_srgb,#25d366_86%,#efede7)]" href="https://wa.me/919876543210?text=Hi%20JCK%20Builder's!%20I'm%20interested%20in%20your%20services." target="_blank" rel="noreferrer">
+              <svg class="whatsapp-icon" width="22" height="22" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path fill="currentColor" d="M16.01 3.2A12.7 12.7 0 0 0 5.2 22.57L3.6 28.8l6.38-1.54A12.69 12.69 0 1 0 16.01 3.2Zm0 2.35a10.34 10.34 0 0 1 8.75 15.87 10.35 10.35 0 0 1-13.98 3.44l-.45-.27-3.66.88.92-3.56-.3-.47A10.34 10.34 0 0 1 16.01 5.55Zm-4.16 5.1c-.23 0-.59.08-.9.43-.31.34-1.18 1.15-1.18 2.8 0 1.64 1.21 3.23 1.38 3.45.17.23 2.34 3.75 5.77 5.1 2.85 1.13 3.43.91 4.05.85.62-.06 2-.82 2.28-1.61.28-.8.28-1.48.2-1.62-.08-.14-.31-.23-.65-.4-.34-.17-2-.98-2.31-1.09-.31-.11-.54-.17-.76.17-.23.34-.88 1.09-1.08 1.31-.2.23-.4.26-.73.09-.34-.17-1.43-.53-2.73-1.68-1.01-.9-1.69-2.01-1.89-2.35-.2-.34-.02-.53.15-.7.16-.15.34-.4.51-.6.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.08-.17-.76-1.84-1.05-2.51-.28-.66-.56-.56-.76-.57h-.66Z" /></svg>
+              <span>Chat on WhatsApp</span>
             </a>
           </div>
         </div>
 
         <!-- Right — Form -->
-        <div class="contact-form reveal">
-          <h3>Send Us a Message</h3>
-          <form id="contact-form" onsubmit="event.preventDefault(); document.getElementById('form-success').style.display='block'; this.reset();">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="contact-name">Full Name *</label>
-                <input type="text" id="contact-name" placeholder="Your full name" required>
+        <div class="reveal rounded-lg border border-[rgb(38_40_43_/_0.12)] bg-[#f8f6f0] p-6 shadow-sm sm:p-8">
+          <h3 class="text-2xl font-black leading-tight text-[#26282b]">Send Us a Message</h3>
+          <form id="contact-form" class="mt-6 grid gap-5" onsubmit="event.preventDefault(); document.getElementById('form-success').style.display='block'; this.reset();">
+            <div class="grid gap-5 sm:grid-cols-2">
+              <div>
+                <label class="mb-2 block text-sm font-bold text-[#26282b]" for="contact-name">Full Name *</label>
+                <input class="w-full rounded border border-[rgb(38_40_43_/_0.16)] bg-[#fff] px-4 py-3 text-sm text-[#26282b] outline-none transition focus:border-[#e8b923]" type="text" id="contact-name" placeholder="Your full name" required>
               </div>
-              <div class="form-group">
-                <label for="contact-phone">Phone Number *</label>
-                <input type="tel" id="contact-phone" placeholder="+91 XXXXX XXXXX" required>
+              <div>
+                <label class="mb-2 block text-sm font-bold text-[#26282b]" for="contact-phone">Phone Number *</label>
+                <input class="w-full rounded border border-[rgb(38_40_43_/_0.16)] bg-[#fff] px-4 py-3 text-sm text-[#26282b] outline-none transition focus:border-[#e8b923]" type="tel" id="contact-phone" placeholder="+91 XXXXX XXXXX" required>
               </div>
             </div>
-            <div class="form-group">
-              <label for="contact-email">Email Address</label>
-              <input type="email" id="contact-email" placeholder="your@email.com">
+            <div>
+              <label class="mb-2 block text-sm font-bold text-[#26282b]" for="contact-email">Email Address</label>
+              <input class="w-full rounded border border-[rgb(38_40_43_/_0.16)] bg-[#fff] px-4 py-3 text-sm text-[#26282b] outline-none transition focus:border-[#e8b923]" type="email" id="contact-email" placeholder="your@email.com">
             </div>
-            <div class="form-group">
-              <label for="contact-service">Service Required</label>
-              <select id="contact-service">
+            <div>
+              <label class="mb-2 block text-sm font-bold text-[#26282b]" for="contact-service">Service Required</label>
+              <select class="w-full rounded border border-[rgb(38_40_43_/_0.16)] bg-[#fff] px-4 py-3 text-sm text-[#26282b] outline-none transition focus:border-[#e8b923]" id="contact-service">
                 <option value="">Select a service</option>
                 <option value="construction">Building Construction</option>
-                <option value="architecture">Architecture & Planning</option>
+                <option value="architecture">Architecture &amp; Planning</option>
                 <option value="interior">Interior Design</option>
-                <option value="renovation">Renovation & Remodeling</option>
+                <option value="renovation">Renovation &amp; Remodeling</option>
                 <option value="villa">Villa Construction</option>
                 <option value="commercial">Commercial Construction</option>
                 <option value="other">Other</option>
               </select>
             </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="contact-budget">Estimated Budget</label>
-                <select id="contact-budget">
+            <div class="grid gap-5 sm:grid-cols-2">
+              <div>
+                <label class="mb-2 block text-sm font-bold text-[#26282b]" for="contact-budget">Estimated Budget</label>
+                <select class="w-full rounded border border-[rgb(38_40_43_/_0.16)] bg-[#fff] px-4 py-3 text-sm text-[#26282b] outline-none transition focus:border-[#e8b923]" id="contact-budget">
                   <option value="">Select range</option>
-                  <option value="10-25L">₹10L — ₹25L</option>
-                  <option value="25-50L">₹25L — ₹50L</option>
-                  <option value="50L-1Cr">₹50L — ₹1Cr</option>
-                  <option value="1Cr-3Cr">₹1Cr — ₹3Cr</option>
+                  <option value="10-25L">₹10L &#8212; ₹25L</option>
+                  <option value="25-50L">₹25L &#8212; ₹50L</option>
+                  <option value="50L-1Cr">₹50L &#8212; ₹1Cr</option>
+                  <option value="1Cr-3Cr">₹1Cr &#8212; ₹3Cr</option>
                   <option value="3Cr+">₹3Cr+</option>
                 </select>
               </div>
-              <div class="form-group">
-                <label for="contact-location">Project Location</label>
-                <input type="text" id="contact-location" placeholder="City / Area">
+              <div>
+                <label class="mb-2 block text-sm font-bold text-[#26282b]" for="contact-location">Project Location</label>
+                <input class="w-full rounded border border-[rgb(38_40_43_/_0.16)] bg-[#fff] px-4 py-3 text-sm text-[#26282b] outline-none transition focus:border-[#e8b923]" type="text" id="contact-location" placeholder="City / Area">
               </div>
             </div>
-            <div class="form-group">
-              <label for="contact-message">Project Details *</label>
-              <textarea id="contact-message" placeholder="Tell us about your project — type, size, timeline, special requirements..." rows="5" required></textarea>
+            <div>
+              <label class="mb-2 block text-sm font-bold text-[#26282b]" for="contact-message">Project Details *</label>
+              <textarea class="w-full resize-y rounded border border-[rgb(38_40_43_/_0.16)] bg-[#fff] px-4 py-3 text-sm text-[#26282b] outline-none transition focus:border-[#e8b923]" id="contact-message" placeholder="Tell us about your project — type, size, timeline, special requirements..." rows="5" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary" style="width:100%;font-size:1rem;">Send Message →</button>
+            <button type="submit" class="inline-flex min-h-11 w-full items-center justify-center rounded bg-[#e8b923] px-5 py-3 text-sm font-black text-[#26282b] shadow-sm transition hover:-translate-y-0.5 hover:bg-[color-mix(in_srgb,#e8b923_86%,#efede7)]">Send Message</button>
           </form>
 
           <!-- Success Message -->
-          <div id="form-success" style="display:none;margin-top:20px;padding:20px;background:rgba(212,175,55,0.08);border:1px solid rgba(212,175,55,0.2);border-radius:var(--radius-md);text-align:center;">
-            <p style="font-size:1.1rem;color:var(--navy);font-weight:600;">✅ Thank you for reaching out!</p>
-            <p style="font-size:0.9rem;color:var(--gray-500);margin-top:8px;">Our team will get back to you within 24 hours. For urgent enquiries, please call us directly.</p>
+          <div id="form-success" class="mt-5 rounded-lg border border-[rgb(232_185_35_/_0.4)] bg-[rgb(232_185_35_/_0.12)] p-5 text-center" style="display:none;">
+            <p class="text-base font-black text-[#26282b]">Thank you for reaching out!</p>
+            <p class="mt-2 text-sm leading-6 text-[#3a3c3f]">Our team will get back to you within 24 hours. For urgent enquiries, please call us directly.</p>
           </div>
         </div>
       </div>
 
       <!-- GOOGLE MAP -->
-      <div class="map-container reveal">
+      <div class="reveal mt-12 aspect-[16/7] overflow-hidden rounded-lg border border-[rgb(38_40_43_/_0.12)]">
         <iframe
+          class="h-full w-full"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9849375891447!2d77.6069!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sMG%20Road%2C%20Bangalore!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-          title="JCK Builder's Office Location">
-        </iframe>
+          title="JCK Builder's Office Location"></iframe>
       </div>
     </div>
   </section>
 
   <!-- BOOK SITE VISIT CTA -->
-  <section class="section-dark">
-    <div class="container" style="text-align:center;">
-      <div class="reveal">
-        <span class="section-label">Free Service</span>
-        <h2 style="font-family:var(--font-display);font-size:2rem;color:var(--white);margin:12px 0;">📅 Book a Free Site Visit</h2>
-        <p style="color:var(--gray-400);max-width:600px;margin:0 auto 28px;line-height:1.8;">Our construction experts will visit your project site, assess requirements, and provide a detailed proposal — absolutely free of charge.</p>
-        <a href="#" class="btn btn-primary" data-modal="site-visit-modal">Schedule Site Visit →</a>
+  <section class="bg-[#26282b] py-16 text-[#efede7] sm:py-20 lg:py-24">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="reveal mx-auto flex max-w-3xl flex-col items-center text-center">
+        <p class="text-xs font-black uppercase tracking-[0.22em] text-[#e8b923]">Free Service</p>
+        <h2 class="mt-4 text-3xl font-black leading-tight sm:text-4xl lg:text-5xl">Book a Free Site Visit</h2>
+        <p class="mt-5 max-w-2xl leading-8 text-[#d8d5ce]">Our construction experts will visit your project site, assess requirements, and provide a detailed proposal — absolutely free of charge.</p>
+        <a href="#" class="mt-8 inline-flex min-h-11 items-center justify-center rounded bg-[#e8b923] px-5 py-3 text-sm font-black text-[#26282b] shadow-sm transition hover:-translate-y-0.5 hover:bg-[color-mix(in_srgb,#e8b923_86%,#efede7)]" data-modal="site-visit-modal">Schedule Site Visit</a>
       </div>
     </div>
   </section>
@@ -171,7 +187,7 @@
           </div>
           <div>
             <h3 class="border-b border-[rgb(239_237_231_/_0.28)] pb-3 text-lg font-black">Company</h3>
-            <div class="mt-5 grid gap-3 text-sm font-semibold text-[#d8d5ce]"><a href="about.html">About JCK</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a></div>
+            <div class="mt-5 grid gap-3 text-sm font-semibold text-[#d8d5ce]"><a href="about.html">About JCK</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="process.html">Process</a><a href="testimonials.html">Testimonials</a></div>
           </div>
           <div>
             <h3 class="border-b border-[rgb(239_237_231_/_0.28)] pb-3 text-lg font-black">Services</h3>

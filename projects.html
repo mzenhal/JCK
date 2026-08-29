@@ -10,132 +10,192 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar" id="navbar">
-    <div class="container">
-      <a href="index.html" class="nav-logo"><img class="nav-logo-mark" src="assets/jck-logo-transparent.png" alt="JCK Builders & Interior LLP" /></a>
-      <div class="nav-links" id="nav-links">
-        <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html" class="active">Projects</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
-        <div class="nav-cta"><a href="contact.html" class="btn btn-primary">Get Quote</a></div>
+    <!-- NAVBAR -->
+  <header class="fixed inset-x-0 top-0 z-50 text-[#efede7] transition-[background,background-color,border-color,box-shadow,backdrop-filter] duration-500 data-[state=active]:border-b data-[state=active]:border-[rgb(232_185_35_/_0.16)] data-[state=active]:bg-[rgb(38_40_43_/_0.30)] data-[state=active]:shadow-[0_12px_40px_rgb(47_41_35_/_0.22)] data-[state=active]:backdrop-blur-xl" data-site-header>
+    <nav class="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <a href="index.html" class="flex items-center gap-3" aria-label="JCK Builder's home">
+        <img class="h-16 w-auto max-w-[15rem] flex-none object-contain sm:max-w-[18rem]" src="assets/jck-logo-transparent.png" alt="JCK Builders & Interior LLP" />
+      </a>
+      <button class="inline-flex size-11 items-center justify-center rounded-lg border border-[rgb(239_237_231_/_0.24)] bg-[rgb(239_237_231_/_0.07)] text-[#efede7] backdrop-blur lg:hidden" data-menu-toggle aria-label="Open navigation" aria-expanded="false">
+        <span class="h-0.5 w-5 bg-current before:block before:h-0.5 before:w-5 before:-translate-y-2 before:bg-current before:content-[''] after:block after:h-0.5 after:w-5 after:translate-y-1.5 after:bg-current after:content-['']"></span>
+      </button>
+      <div class="absolute left-4 right-4 top-24 hidden rounded-lg p-4 lg:static lg:block lg:p-0 max-lg:border max-lg:border-[rgb(239_237_231_/_0.14)] max-lg:bg-[rgb(38_40_43_/_0.95)] max-lg:shadow-[0_22px_70px_rgb(38_40_43_/_0.3)] max-lg:backdrop-blur-2xl" data-menu>
+        <div class="relative flex flex-col gap-1 text-sm font-semibold text-[#efede7] lg:flex-row lg:items-center lg:gap-2">
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="index.html">Home</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="about.html">About</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="services.html">Services</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#e8b923] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-100 before:rounded-full before:bg-[#e8b923] before:content-['']" href="projects.html">Projects</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="gallery.html">Gallery</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="process.html">Process</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="testimonials.html">Testimonials</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="contact.html">Contact</a>
+          <a class="mt-2 inline-flex min-h-11 items-center justify-center rounded bg-[#e8b923] px-5 py-3 text-sm font-black text-[#26282b] shadow-sm transition hover:bg-[color-mix(in_srgb,#e8b923_86%,#efede7)] lg:ml-2 lg:mt-0" href="contact.html">Get Quote</a>
+        </div>
       </div>
-      <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
   <!-- PAGE HEADER -->
   <section class="page-header">
     <div class="container">
       <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Projects</span></div>
-      <h1 class="section-title" style="margin-top:12px;">Our Projects</h1>
-      <p class="section-subtitle light">A showcase of our finest construction and design work</p>
+      <h1 class="page-title">Our Projects</h1>
+      <p class="page-subtitle">A showcase of our finest construction and design work</p>
     </div>
   </section>
 
   <!-- PORTFOLIO -->
-  <section>
-    <div class="container">
-      <div class="filter-bar reveal">
-        <button class="filter-btn active" data-filter="all">All Projects</button>
-        <button class="filter-btn" data-filter="residential">Residential</button>
-        <button class="filter-btn" data-filter="commercial">Commercial</button>
-        <button class="filter-btn" data-filter="interior">Interiors</button>
-        <button class="filter-btn" data-filter="ongoing">Ongoing</button>
+  <section class="bg-[#efede7] py-16 sm:py-20 lg:py-24">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <p class="text-xs font-black uppercase tracking-[0.22em] text-[#e8b923]">Our Portfolio</p>
+        <h2 class="mt-4 text-3xl font-black leading-tight text-[#26282b] sm:text-4xl lg:text-5xl">Explore our completed &amp; ongoing work.</h2>
+        <p class="mt-5 max-w-2xl leading-8 text-[#3a3c3f]">Filter by category to browse residential, commercial, interior, and ongoing projects.</p>
       </div>
-      <div class="projects-grid">
+      <div class="reveal mt-10 flex flex-wrap justify-center gap-2 sm:justify-start">
+        <button class="filter-btn active rounded-full border border-[rgb(38_40_43_/_0.18)] px-5 py-2 text-sm font-bold text-[#26282b] transition hover:-translate-y-0.5 hover:border-[#e8b923]" data-filter="all">All Projects</button>
+        <button class="filter-btn rounded-full border border-[rgb(38_40_43_/_0.18)] px-5 py-2 text-sm font-bold text-[#26282b] transition hover:-translate-y-0.5 hover:border-[#e8b923]" data-filter="residential">Residential</button>
+        <button class="filter-btn rounded-full border border-[rgb(38_40_43_/_0.18)] px-5 py-2 text-sm font-bold text-[#26282b] transition hover:-translate-y-0.5 hover:border-[#e8b923]" data-filter="commercial">Commercial</button>
+        <button class="filter-btn rounded-full border border-[rgb(38_40_43_/_0.18)] px-5 py-2 text-sm font-bold text-[#26282b] transition hover:-translate-y-0.5 hover:border-[#e8b923]" data-filter="interior">Interiors</button>
+        <button class="filter-btn rounded-full border border-[rgb(38_40_43_/_0.18)] px-5 py-2 text-sm font-bold text-[#26282b] transition hover:-translate-y-0.5 hover:border-[#e8b923]" data-filter="ongoing">Ongoing</button>
+      </div>
+      <div class="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         <!-- Project 1 -->
-        <div class="project-card reveal" data-category="residential">
-          <img src="assets/project-villa.png" alt="Sunrise Luxury Villa">
-          <div class="project-card-overlay">
-            <span class="project-type">Residential</span>
-            <h3>Sunrise Luxury Villa</h3>
-            <span class="project-location">📍 Bangalore, Karnataka</span>
+        <div class="project-card group relative min-h-0 overflow-hidden rounded-lg border border-[rgb(38_40_43_/_0.14)] bg-[#2f2923] shadow-sm transition hover:-translate-y-1 hover:border-[#e8b923] hover:shadow-[0_18px_60px_rgb(38_40_43_/_0.18)] reveal" data-category="residential">
+          <img class="aspect-[4/3] w-full object-cover opacity-95 transition duration-700 group-hover:scale-105 group-hover:opacity-100" src="assets/project-villa.png" alt="Sunrise Luxury Villa">
+          <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[rgb(38_40_43_/_0.95)] to-transparent p-5">
+            <span class="inline-flex rounded-full bg-[#e8b923] px-3 py-1 text-[0.7rem] font-black uppercase tracking-wide text-[#26282b]">Residential</span>
+            <h3 class="mt-3 text-lg font-black text-[#efede7]">Sunrise Luxury Villa</h3>
+            <p class="mt-1 text-sm font-semibold text-[#d8d5ce]">Bangalore, Karnataka</p>
           </div>
         </div>
         <!-- Project 2 -->
-        <div class="project-card reveal" data-category="commercial">
-          <img src="assets/project-commercial.png" alt="Nexus Business Tower">
-          <div class="project-card-overlay">
-            <span class="project-type">Commercial</span>
-            <h3>Nexus Business Tower</h3>
-            <span class="project-location">📍 Hyderabad, Telangana</span>
+        <div class="project-card group relative min-h-0 overflow-hidden rounded-lg border border-[rgb(38_40_43_/_0.14)] bg-[#2f2923] shadow-sm transition hover:-translate-y-1 hover:border-[#e8b923] hover:shadow-[0_18px_60px_rgb(38_40_43_/_0.18)] reveal" data-category="commercial">
+          <img class="aspect-[4/3] w-full object-cover opacity-95 transition duration-700 group-hover:scale-105 group-hover:opacity-100" src="assets/project-commercial.png" alt="Nexus Business Tower">
+          <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[rgb(38_40_43_/_0.95)] to-transparent p-5">
+            <span class="inline-flex rounded-full bg-[#e8b923] px-3 py-1 text-[0.7rem] font-black uppercase tracking-wide text-[#26282b]">Commercial</span>
+            <h3 class="mt-3 text-lg font-black text-[#efede7]">Nexus Business Tower</h3>
+            <p class="mt-1 text-sm font-semibold text-[#d8d5ce]">Hyderabad, Telangana</p>
           </div>
         </div>
         <!-- Project 3 -->
-        <div class="project-card reveal" data-category="interior">
-          <img src="assets/interior-kitchen.png" alt="Modern Kitchen">
-          <div class="project-card-overlay">
-            <span class="project-type">Interior</span>
-            <h3>Modern Kitchen Redesign</h3>
-            <span class="project-location">📍 Mumbai, Maharashtra</span>
+        <div class="project-card group relative min-h-0 overflow-hidden rounded-lg border border-[rgb(38_40_43_/_0.14)] bg-[#2f2923] shadow-sm transition hover:-translate-y-1 hover:border-[#e8b923] hover:shadow-[0_18px_60px_rgb(38_40_43_/_0.18)] reveal" data-category="interior">
+          <img class="aspect-[4/3] w-full object-cover opacity-95 transition duration-700 group-hover:scale-105 group-hover:opacity-100" src="assets/interior-kitchen.png" alt="Modern Kitchen">
+          <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[rgb(38_40_43_/_0.95)] to-transparent p-5">
+            <span class="inline-flex rounded-full bg-[#e8b923] px-3 py-1 text-[0.7rem] font-black uppercase tracking-wide text-[#26282b]">Interior</span>
+            <h3 class="mt-3 text-lg font-black text-[#efede7]">Modern Kitchen Redesign</h3>
+            <p class="mt-1 text-sm font-semibold text-[#d8d5ce]">Mumbai, Maharashtra</p>
           </div>
         </div>
         <!-- Project 4 -->
-        <div class="project-card reveal" data-category="residential">
-          <img src="assets/interior-living.png" alt="Panorama Heights">
-          <div class="project-card-overlay">
-            <span class="project-type">Residential</span>
-            <h3>Panorama Heights Apartments</h3>
-            <span class="project-location">📍 Chennai, Tamil Nadu</span>
+        <div class="project-card group relative min-h-0 overflow-hidden rounded-lg border border-[rgb(38_40_43_/_0.14)] bg-[#2f2923] shadow-sm transition hover:-translate-y-1 hover:border-[#e8b923] hover:shadow-[0_18px_60px_rgb(38_40_43_/_0.18)] reveal" data-category="residential">
+          <img class="aspect-[4/3] w-full object-cover opacity-95 transition duration-700 group-hover:scale-105 group-hover:opacity-100" src="assets/interior-living.png" alt="Panorama Heights">
+          <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[rgb(38_40_43_/_0.95)] to-transparent p-5">
+            <span class="inline-flex rounded-full bg-[#e8b923] px-3 py-1 text-[0.7rem] font-black uppercase tracking-wide text-[#26282b]">Residential</span>
+            <h3 class="mt-3 text-lg font-black text-[#efede7]">Panorama Heights Apartments</h3>
+            <p class="mt-1 text-sm font-semibold text-[#d8d5ce]">Chennai, Tamil Nadu</p>
           </div>
         </div>
         <!-- Project 5 -->
-        <div class="project-card reveal" data-category="interior">
-          <img src="assets/interior-bedroom.png" alt="Master Bedroom Suite">
-          <div class="project-card-overlay">
-            <span class="project-type">Interior</span>
-            <h3>Master Bedroom Suite</h3>
-            <span class="project-location">📍 Pune, Maharashtra</span>
+        <div class="project-card group relative min-h-0 overflow-hidden rounded-lg border border-[rgb(38_40_43_/_0.14)] bg-[#2f2923] shadow-sm transition hover:-translate-y-1 hover:border-[#e8b923] hover:shadow-[0_18px_60px_rgb(38_40_43_/_0.18)] reveal" data-category="interior">
+          <img class="aspect-[4/3] w-full object-cover opacity-95 transition duration-700 group-hover:scale-105 group-hover:opacity-100" src="assets/interior-bedroom.png" alt="Master Bedroom Suite">
+          <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[rgb(38_40_43_/_0.95)] to-transparent p-5">
+            <span class="inline-flex rounded-full bg-[#e8b923] px-3 py-1 text-[0.7rem] font-black uppercase tracking-wide text-[#26282b]">Interior</span>
+            <h3 class="mt-3 text-lg font-black text-[#efede7]">Master Bedroom Suite</h3>
+            <p class="mt-1 text-sm font-semibold text-[#d8d5ce]">Pune, Maharashtra</p>
           </div>
         </div>
         <!-- Project 6 -->
-        <div class="project-card reveal" data-category="ongoing">
-          <img src="assets/hero-construction.png" alt="Ongoing Project">
-          <div class="project-card-overlay">
-            <span class="project-type">Ongoing</span>
-            <h3>Skyline Residences</h3>
-            <span class="project-location">📍 Bangalore, Karnataka</span>
+        <div class="project-card group relative min-h-0 overflow-hidden rounded-lg border border-[rgb(38_40_43_/_0.14)] bg-[#2f2923] shadow-sm transition hover:-translate-y-1 hover:border-[#e8b923] hover:shadow-[0_18px_60px_rgb(38_40_43_/_0.18)] reveal" data-category="ongoing">
+          <img class="aspect-[4/3] w-full object-cover opacity-95 transition duration-700 group-hover:scale-105 group-hover:opacity-100" src="assets/hero-construction.png" alt="Ongoing Project">
+          <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[rgb(38_40_43_/_0.95)] to-transparent p-5">
+            <span class="inline-flex rounded-full bg-[#e8b923] px-3 py-1 text-[0.7rem] font-black uppercase tracking-wide text-[#26282b]">Ongoing</span>
+            <h3 class="mt-3 text-lg font-black text-[#efede7]">Skyline Residences</h3>
+            <p class="mt-1 text-sm font-semibold text-[#d8d5ce]">Bangalore, Karnataka</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PROJECT DETAILS SECTION -->
-  <section class="section-gray">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Project Spotlight</span>
-        <h2 class="section-title">Sunrise Luxury Villa</h2>
-        <p class="section-subtitle">A 4,500 sq.ft. luxury villa with modern amenities, landscaped garden, and private pool.</p>
-      </div>
-      <div class="about-grid">
-        <div class="about-image reveal">
-          <img src="assets/project-villa.png" alt="Sunrise Villa">
+  <!-- PROJECT SPOTLIGHT -->
+  <section class="bg-[#26282b] py-16 text-[#efede7] sm:py-20 lg:py-24">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-10 lg:grid-cols-2 lg:items-center">
+        <div class="reveal overflow-hidden rounded-lg border border-[rgb(239_237_231_/_0.16)] shadow-[0_22px_70px_rgb(0_0_0_/_0.28)]">
+          <img class="aspect-[4/3] w-full object-cover" src="assets/project-villa.png" alt="Sunrise Villa">
         </div>
-        <div class="about-text reveal">
-          <span class="section-label">Completed — 2024</span>
-          <h3>Project Overview</h3>
-          <p>This luxury villa in Bangalore features contemporary architecture with clean geometric lines, floor-to-ceiling windows, and a stunning infinity pool. The interiors were designed with a neutral palette accented by gold fixtures.</p>
-          <div class="about-features">
-            <div class="about-feature-item"><div class="icon">✓</div><span>4,500 sq.ft. Built-up</span></div>
-            <div class="about-feature-item"><div class="icon">✓</div><span>5 Bedrooms</span></div>
-            <div class="about-feature-item"><div class="icon">✓</div><span>Private Pool</span></div>
-            <div class="about-feature-item"><div class="icon">✓</div><span>Smart Home</span></div>
-            <div class="about-feature-item"><div class="icon">✓</div><span>Landscaped Garden</span></div>
-            <div class="about-feature-item"><div class="icon">✓</div><span>3-Car Garage</span></div>
+        <div class="reveal">
+          <p class="text-xs font-black uppercase tracking-[0.22em] text-[#e8b923]">Project Spotlight &mdash; Completed 2024</p>
+          <h2 class="mt-4 text-3xl font-black leading-tight sm:text-4xl lg:text-5xl">Sunrise Luxury Villa</h2>
+          <p class="mt-5 leading-8 text-[#d8d5ce]">A 4,500 sq.ft. luxury villa with modern amenities, landscaped garden, and private pool. The interiors use a neutral palette accented by gold fixtures, with clean geometric lines and floor-to-ceiling windows.</p>
+          <ul class="mt-8 grid gap-3 sm:grid-cols-2">
+            <li class="flex items-center gap-3"><span class="grid size-7 flex-none place-items-center rounded-full bg-[rgb(232_185_35_/_0.16)] text-[#b88f17]">✓</span><span class="text-sm font-semibold text-[#d8d5ce]">4,500 sq.ft. Built-up</span></li>
+            <li class="flex items-center gap-3"><span class="grid size-7 flex-none place-items-center rounded-full bg-[rgb(232_185_35_/_0.16)] text-[#b88f17]">✓</span><span class="text-sm font-semibold text-[#d8d5ce]">5 Bedrooms</span></li>
+            <li class="flex items-center gap-3"><span class="grid size-7 flex-none place-items-center rounded-full bg-[rgb(232_185_35_/_0.16)] text-[#b88f17]">✓</span><span class="text-sm font-semibold text-[#d8d5ce]">Private Pool</span></li>
+            <li class="flex items-center gap-3"><span class="grid size-7 flex-none place-items-center rounded-full bg-[rgb(232_185_35_/_0.16)] text-[#b88f17]">✓</span><span class="text-sm font-semibold text-[#d8d5ce]">Smart Home</span></li>
+            <li class="flex items-center gap-3"><span class="grid size-7 flex-none place-items-center rounded-full bg-[rgb(232_185_35_/_0.16)] text-[#b88f17]">✓</span><span class="text-sm font-semibold text-[#d8d5ce]">Landscaped Garden</span></li>
+            <li class="flex items-center gap-3"><span class="grid size-7 flex-none place-items-center rounded-full bg-[rgb(232_185_35_/_0.16)] text-[#b88f17]">✓</span><span class="text-sm font-semibold text-[#d8d5ce]">3-Car Garage</span></li>
+          </ul>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a class="inline-flex min-h-11 w-fit items-center justify-center rounded bg-[#e8b923] px-5 py-3 text-sm font-black text-[#26282b] shadow-sm transition hover:-translate-y-0.5 hover:bg-[color-mix(in_srgb,#e8b923_86%,#efede7)]" href="contact.html">Start Similar Project →</a>
           </div>
-          <a href="contact.html" class="btn btn-primary">Start Similar Project →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEFORE & AFTER -->
+  <section class="bg-[#efede7] py-16 sm:py-20 lg:py-24">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <p class="text-xs font-black uppercase tracking-[0.22em] text-[#e8b923]">Visually Compare</p>
+        <h2 class="mt-4 text-3xl font-black leading-tight text-[#26282b] sm:text-4xl lg:text-5xl">Before &amp; After Transformations</h2>
+        <p class="mt-5 max-w-2xl leading-8 text-[#3a3c3f]">Drag the slider to see how we turn raw shells and tired interiors into finished, refined spaces.</p>
+      </div>
+      <div class="mt-10 grid gap-4 md:grid-cols-2">
+        <div class="ba-box reveal overflow-hidden rounded-lg border border-[rgb(38_40_43_/_0.12)] shadow-sm">
+          <div class="ba-slider">
+            <div class="ba-after">
+              <span class="ba-label after">After</span>
+              <img src="assets/interior-living.png" alt="Living room after renovation by JCK">
+            </div>
+            <div class="ba-before">
+              <span class="ba-label">Before</span>
+              <img src="assets/hero-construction.png" alt="Space before renovation">
+            </div>
+            <div class="ba-handle"><div class="ba-handle-knob">⇔</div></div>
+          </div>
+        </div>
+        <div class="ba-box reveal overflow-hidden rounded-lg border border-[rgb(38_40_43_/_0.12)] shadow-sm">
+          <div class="ba-slider">
+            <div class="ba-after">
+              <span class="ba-label after">After</span>
+              <img src="assets/interior-kitchen.png" alt="Modern kitchen after remodel by JCK">
+            </div>
+            <div class="ba-before">
+              <span class="ba-label">Before</span>
+              <img src="assets/interior-bedroom.png" alt="Old kitchen before remodel">
+            </div>
+            <div class="ba-handle"><div class="ba-handle-knob">⇔</div></div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="cta-section">
-    <div class="container">
-      <h2 class="cta-title reveal">Have a Project in <span style="color:var(--gold);">Mind?</span></h2>
-      <p class="cta-subtitle reveal">Let's bring your vision to life. Get a free consultation with our experts.</p>
-      <div class="cta-buttons reveal"><a href="contact.html" class="btn btn-primary">Get Free Consultation →</a></div>
+  <section class="bg-[#efede7] py-16 sm:py-20 lg:py-24">
+    <div class="mx-auto grid w-full max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[1fr_0.65fr] lg:items-center lg:px-8">
+      <div>
+        <p class="text-xs font-black uppercase tracking-[0.22em] text-[#e8b923]">Start With Clarity</p>
+        <h2 class="mt-4 max-w-3xl text-3xl font-black leading-tight text-[#26282b] sm:text-4xl lg:text-5xl">Have a Project in <span class="text-[#e8b923]">Mind?</span></h2>
+        <p class="mt-5 max-w-2xl leading-8 text-[#3a3c3f]">Let's bring your vision to life. Get a free consultation with our experts.</p>
+      </div>
+      <div class="flex flex-col gap-3 sm:flex-row lg:flex-col">
+        <a class="inline-flex min-h-12 items-center justify-center rounded bg-[#e8b923] px-5 py-3 text-sm font-black text-[#26282b] transition hover:-translate-y-0.5 hover:bg-[color-mix(in_srgb,#e8b923_86%,#efede7)]" href="contact.html">Get Free Consultation →</a>
+        <a class="inline-flex min-h-12 items-center justify-center rounded border border-[rgb(38_40_43_/_0.18)] px-5 py-3 text-sm font-black text-[#26282b] transition hover:-translate-y-0.5 hover:border-[#e8b923]" href="https://wa.me/919876543210" target="_blank" rel="noreferrer">Chat on WhatsApp</a>
+      </div>
     </div>
   </section>
 
@@ -149,7 +209,7 @@
           </div>
           <div>
             <h3 class="border-b border-[rgb(239_237_231_/_0.28)] pb-3 text-lg font-black">Company</h3>
-            <div class="mt-5 grid gap-3 text-sm font-semibold text-[#d8d5ce]"><a href="about.html">About JCK</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a></div>
+            <div class="mt-5 grid gap-3 text-sm font-semibold text-[#d8d5ce]"><a href="about.html">About JCK</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="process.html">Process</a><a href="testimonials.html">Testimonials</a></div>
           </div>
           <div>
             <h3 class="border-b border-[rgb(239_237_231_/_0.28)] pb-3 text-lg font-black">Services</h3>
@@ -175,5 +235,6 @@
   <a class="fixed bottom-5 right-5 z-40 inline-flex items-center gap-2 rounded bg-[#25d366] px-4 py-3 text-sm font-black text-[#0b2f18] shadow-xl shadow-[rgb(38_40_43_/_0.2)] transition hover:-translate-y-1 hover:bg-[color-mix(in_srgb,#25d366_86%,#efede7)]" href="https://wa.me/919876543210" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp"><svg class="whatsapp-icon" width="22" height="22" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path fill="currentColor" d="M16.01 3.2A12.7 12.7 0 0 0 5.2 22.57L3.6 28.8l6.38-1.54A12.69 12.69 0 1 0 16.01 3.2Zm0 2.35a10.34 10.34 0 0 1 8.75 15.87 10.35 10.35 0 0 1-13.98 3.44l-.45-.27-3.66.88.92-3.56-.3-.47A10.34 10.34 0 0 1 16.01 5.55Zm-4.16 5.1c-.23 0-.59.08-.9.43-.31.34-1.18 1.15-1.18 2.8 0 1.64 1.21 3.23 1.38 3.45.17.23 2.34 3.75 5.77 5.1 2.85 1.13 3.43.91 4.05.85.62-.06 2-.82 2.28-1.61.28-.8.28-1.48.2-1.62-.08-.14-.31-.23-.65-.4-.34-.17-2-.98-2.31-1.09-.31-.11-.54-.17-.76.17-.23.34-.88 1.09-1.08 1.31-.2.23-.4.26-.73.09-.34-.17-1.43-.53-2.73-1.68-1.01-.9-1.69-2.01-1.89-2.35-.2-.34-.02-.53.15-.7.16-.15.34-.4.51-.6.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.08-.17-.76-1.84-1.05-2.51-.28-.66-.56-.56-.76-.57h-.66Z" /></svg><span>WhatsApp</span></a>
   <script type="module" src="js/main.js"></script>
   <script type="module" src="js/portfolio.js"></script>
+  <script type="module" src="js/slider.js"></script>
 </body>
 </html>

@@ -10,148 +10,161 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar" id="navbar">
-    <div class="container">
-      <a href="index.html" class="nav-logo">
-        <img class="nav-logo-mark" src="assets/jck-logo-transparent.png" alt="JCK Builders & Interior LLP" />
+    <!-- NAVBAR -->
+  <header class="fixed inset-x-0 top-0 z-50 text-[#efede7] transition-[background,background-color,border-color,box-shadow,backdrop-filter] duration-500 data-[state=active]:border-b data-[state=active]:border-[rgb(232_185_35_/_0.16)] data-[state=active]:bg-[rgb(38_40_43_/_0.30)] data-[state=active]:shadow-[0_12px_40px_rgb(47_41_35_/_0.22)] data-[state=active]:backdrop-blur-xl" data-site-header>
+    <nav class="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <a href="index.html" class="flex items-center gap-3" aria-label="JCK Builder's home">
+        <img class="h-16 w-auto max-w-[15rem] flex-none object-contain sm:max-w-[18rem]" src="assets/jck-logo-transparent.png" alt="JCK Builders & Interior LLP" />
       </a>
-      <div class="nav-links" id="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html" class="active">About</a>
-        <a href="services.html">Services</a>
-        <a href="projects.html">Projects</a>
-        <a href="gallery.html">Gallery</a>
-
-
-        <a href="contact.html">Contact</a>
-        <div class="nav-cta"><a href="contact.html" class="btn btn-primary">Get Quote</a></div>
+      <button class="inline-flex size-11 items-center justify-center rounded-lg border border-[rgb(239_237_231_/_0.24)] bg-[rgb(239_237_231_/_0.07)] text-[#efede7] backdrop-blur lg:hidden" data-menu-toggle aria-label="Open navigation" aria-expanded="false">
+        <span class="h-0.5 w-5 bg-current before:block before:h-0.5 before:w-5 before:-translate-y-2 before:bg-current before:content-[''] after:block after:h-0.5 after:w-5 after:translate-y-1.5 after:bg-current after:content-['']"></span>
+      </button>
+      <div class="absolute left-4 right-4 top-24 hidden rounded-lg p-4 lg:static lg:block lg:p-0 max-lg:border max-lg:border-[rgb(239_237_231_/_0.14)] max-lg:bg-[rgb(38_40_43_/_0.95)] max-lg:shadow-[0_22px_70px_rgb(38_40_43_/_0.3)] max-lg:backdrop-blur-2xl" data-menu>
+        <div class="relative flex flex-col gap-1 text-sm font-semibold text-[#efede7] lg:flex-row lg:items-center lg:gap-2">
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="index.html">Home</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#e8b923] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-100 before:rounded-full before:bg-[#e8b923] before:content-['']" href="about.html">About</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="services.html">Services</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="projects.html">Projects</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="gallery.html">Gallery</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="process.html">Process</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="testimonials.html">Testimonials</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="contact.html">Contact</a>
+          <a class="mt-2 inline-flex min-h-11 items-center justify-center rounded bg-[#e8b923] px-5 py-3 text-sm font-black text-[#26282b] shadow-sm transition hover:bg-[color-mix(in_srgb,#e8b923_86%,#efede7)] lg:ml-2 lg:mt-0" href="contact.html">Get Quote</a>
+        </div>
       </div>
-      <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
   <!-- PAGE HEADER -->
   <section class="page-header">
     <div class="container">
       <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>About Us</span></div>
-      <h1 class="section-title" style="margin-top:12px;">About JCK Builder's</h1>
-      <p class="section-subtitle light">Crafting architectural excellence for over 15 years</p>
+      <h1 class="page-title">About JCK Builders</h1>
+      <p class="page-subtitle">Crafting cultural experiences over 15 years</p>
     </div>
   </section>
 
   <!-- COMPANY STORY -->
-  <section>
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-image reveal">
-          <img src="assets/hero-construction.png" alt="JCK Construction Site">
-          <div class="about-image-badge">
-            <div class="number">250+</div>
-            <div class="text">Projects Delivered</div>
+  <section class="bg-[#efede7] py-16 sm:py-20 lg:py-24">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+        <div class="reveal relative overflow-hidden rounded-lg border border-[rgb(38_40_43_/_0.12)] bg-[#f8f6f0]">
+          <img class="aspect-[4/3] w-full object-cover" src="assets/interior-living.png" alt="JCK interior craftsmanship" />
+          <div class="absolute bottom-4 left-4 rounded-lg bg-[rgb(38_40_43_/_0.9)] px-5 py-4 shadow-lg backdrop-blur">
+            <div class="font-['Integral_CF',Arial,sans-serif] text-3xl font-black text-[#e8b923]">250+</div>
+            <div class="mt-1 text-xs font-semibold uppercase tracking-[0.14em] text-[#efede7]">Projects Delivered</div>
           </div>
         </div>
-        <div class="about-text reveal">
-          <span class="section-label">Our Story</span>
-          <h2 class="section-title">A Legacy of Building Excellence</h2>
-          <p>Founded in 2010, JCK Builder's & Interior LLP began as a small construction firm with a bold vision — to redefine the standards of building and interior design in India. What started with a team of 5 passionate builders has grown into a powerhouse of 85+ professionals.</p>
-          <p>Over the past 15 years, we have completed more than 250 projects across residential, commercial, and institutional segments. Our approach combines traditional craftsmanship with modern technology, ensuring every project we undertake becomes a landmark of quality and innovation.</p>
-          <p>From conceptualization to completion, we walk hand-in-hand with our clients, turning blueprints into breathtaking realities. Our reputation is built on trust, transparency, and an unwavering commitment to excellence.</p>
+        <div class="reveal">
+          <p class="text-xs font-black uppercase tracking-[0.22em] text-[#e8b923]">Our Story</p>
+          <h2 class="mt-4 text-3xl font-black leading-tight text-[#26282b] sm:text-4xl lg:text-5xl">A legacy of building excellence.</h2>
+          <p class="mt-6 text-2xl font-semibold leading-10 text-[#26282b]">Founded in 2010, JCK Builder's &amp; Interior LLP began as a small construction firm with a bold vision — to redefine the standards of building and interior design in India.</p>
+          <p class="mt-6 max-w-3xl leading-8 text-[#3a3c3f]">What started with a team of 5 passionate builders has grown into a powerhouse of 85+ professionals. Over 15 years, we have completed more than 250 projects across residential, commercial, and institutional segments.</p>
+          <p class="mt-6 max-w-3xl leading-8 text-[#3a3c3f]">From conceptualization to completion, we walk hand-in-hand with our clients, turning blueprints into breathtaking realities — built on trust, transparency, and an unwavering commitment to excellence.</p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a class="inline-flex min-h-11 w-fit items-center justify-center rounded bg-[#e8b923] px-5 py-3 text-sm font-black text-[#26282b] shadow-sm transition hover:-translate-y-0.5 hover:bg-[color-mix(in_srgb,#e8b923_86%,#efede7)]" href="services.html">Explore Our Services</a>
+            <a class="inline-flex min-h-11 w-fit items-center justify-center rounded border border-[rgb(38_40_43_/_0.18)] px-5 py-3 text-sm font-black text-[#26282b] transition hover:-translate-y-0.5 hover:border-[#e8b923]" href="contact.html">Get in Touch</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- VISION & MISSION -->
-  <section class="section-dark">
-    <div class="container">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;">
-        <div class="reveal" style="padding:40px;background:rgba(255,255,255,0.04);border-radius:var(--radius-lg);border:1px solid rgba(255,255,255,0.08);">
-          <span class="section-label">Our Vision</span>
-          <h3 style="font-family:var(--font-display);font-size:1.5rem;color:var(--white);margin:12px 0 16px;">Building Tomorrow's Landmarks Today</h3>
-          <p style="color:var(--gray-400);line-height:1.8;">To be India's most trusted and innovative construction and interior design firm, setting new benchmarks in quality, sustainability, and client satisfaction. We envision a future where every space we create inspires and elevates the human experience.</p>
-        </div>
-        <div class="reveal" style="padding:40px;background:rgba(255,255,255,0.04);border-radius:var(--radius-lg);border:1px solid rgba(255,255,255,0.08);">
-          <span class="section-label">Our Mission</span>
-          <h3 style="font-family:var(--font-display);font-size:1.5rem;color:var(--white);margin:12px 0 16px;">Excellence in Every Detail</h3>
-          <p style="color:var(--gray-400);line-height:1.8;">To deliver world-class construction and interior design solutions through innovation, integrity, and craftsmanship. We are committed to exceeding client expectations by employing the best talent, using premium materials, and maintaining complete transparency throughout the project lifecycle.</p>
-        </div>
+  <section class="bg-[#26282b] py-16 text-[#efede7] sm:py-20 lg:py-24">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <p class="text-xs font-black uppercase tracking-[0.22em] text-[#e8b923]">Our Direction</p>
+        <h2 class="mt-4 text-3xl font-black leading-tight sm:text-4xl lg:text-5xl">Vision and mission guiding every build.</h2>
+      </div>
+      <div class="mt-10 grid gap-4 md:grid-cols-2">
+        <article class="reveal rounded-lg border border-[rgb(239_237_231_/_0.16)] bg-[rgb(239_237_231_/_0.06)] p-6 transition hover:-translate-y-1 hover:border-[#e8b923]">
+          <p class="text-xs font-black uppercase tracking-[0.22em] text-[#e8b923]">Our Vision</p>
+          <h3 class="mt-4 text-xl font-black text-[#efede7]">Building tomorrow's landmarks today.</h3>
+          <p class="mt-4 leading-7 text-[#d8d5ce]">To be India's most trusted and innovative construction and interior design firm, setting new benchmarks in quality, sustainability, and client satisfaction — creating spaces that inspire and elevate the human experience.</p>
+        </article>
+        <article class="reveal rounded-lg border border-[rgb(239_237_231_/_0.16)] bg-[rgb(239_237_231_/_0.06)] p-6 transition hover:-translate-y-1 hover:border-[#e8b923]">
+          <p class="text-xs font-black uppercase tracking-[0.22em] text-[#e8b923]">Our Mission</p>
+          <h3 class="mt-4 text-xl font-black text-[#efede7]">Excellence in every detail.</h3>
+          <p class="mt-4 leading-7 text-[#d8d5ce]">To deliver world-class construction and interior design solutions through innovation, integrity, and craftsmanship — exceeding client expectations with the best talent, premium materials, and complete transparency throughout the project lifecycle.</p>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- VALUES -->
-  <section>
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">What Drives Us</span>
-        <h2 class="section-title">Our Core Values</h2>
-        <p class="section-subtitle">These values define who we are and how we approach every project.</p>
+  <section class="bg-[#efede7] py-16 sm:py-20 lg:py-24">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <p class="text-xs font-black uppercase tracking-[0.22em] text-[#e8b923]">What Drives Us</p>
+        <h2 class="mt-4 max-w-2xl text-3xl font-black leading-tight text-[#26282b] sm:text-4xl lg:text-5xl">Our core values.</h2>
       </div>
-      <div class="values-grid">
-        <div class="value-card reveal">
-          <div class="value-icon">🤝</div>
-          <h4>Integrity</h4>
-          <p>Honest, transparent dealings with every client. We believe trust is the foundation of great partnerships.</p>
-        </div>
-        <div class="value-card reveal">
-          <div class="value-icon">💎</div>
-          <h4>Quality</h4>
-          <p>Uncompromising standards in materials, workmanship, and finishing. Quality is never an afterthought.</p>
-        </div>
-        <div class="value-card reveal">
-          <div class="value-icon">💡</div>
-          <h4>Innovation</h4>
-          <p>Embracing modern techniques, sustainable practices, and creative design solutions for every project.</p>
-        </div>
-        <div class="value-card reveal">
-          <div class="value-icon">😊</div>
-          <h4>Customer Satisfaction</h4>
-          <p>Your happiness is our success. We go above and beyond to ensure every client is thrilled with the result.</p>
-        </div>
+      <div class="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+        <article class="reveal rounded-lg border border-[rgb(38_40_43_/_0.12)] bg-[#f8f6f0] p-5 shadow-sm transition hover:-translate-y-1 hover:border-[#e8b923] hover:shadow-[0_18px_60px_rgb(38_40_43_/_0.14)]">
+          <div class="grid size-12 place-items-center rounded-lg bg-[rgb(232_185_35_/_0.16)] text-xl font-black text-[#b88f17]">🤝</div>
+          <h3 class="mt-5 text-base font-black text-[#26282b]">Integrity</h3>
+          <p class="mt-2 text-sm leading-6 text-[#3a3c3f]">Honest, transparent dealings with every client — trust is the foundation of great partnerships.</p>
+        </article>
+        <article class="reveal rounded-lg border border-[rgb(38_40_43_/_0.12)] bg-[#f8f6f0] p-5 shadow-sm transition hover:-translate-y-1 hover:border-[#e8b923] hover:shadow-[0_18px_60px_rgb(38_40_43_/_0.14)]">
+          <div class="grid size-12 place-items-center rounded-lg bg-[rgb(232_185_35_/_0.16)] text-xl font-black text-[#b88f17]">💎</div>
+          <h3 class="mt-5 text-base font-black text-[#26282b]">Quality</h3>
+          <p class="mt-2 text-sm leading-6 text-[#3a3c3f]">Uncompromising standards in materials, workmanship, and finishing.</p>
+        </article>
+        <article class="reveal rounded-lg border border-[rgb(38_40_43_/_0.12)] bg-[#f8f6f0] p-5 shadow-sm transition hover:-translate-y-1 hover:border-[#e8b923] hover:shadow-[0_18px_60px_rgb(38_40_43_/_0.14)]">
+          <div class="grid size-12 place-items-center rounded-lg bg-[rgb(232_185_35_/_0.16)] text-xl font-black text-[#b88f17]">💡</div>
+          <h3 class="mt-5 text-base font-black text-[#26282b]">Innovation</h3>
+          <p class="mt-2 text-sm leading-6 text-[#3a3c3f]">Modern techniques, sustainable practices, and creative design solutions for every project.</p>
+        </article>
+        <article class="reveal rounded-lg border border-[rgb(38_40_43_/_0.12)] bg-[#f8f6f0] p-5 shadow-sm transition hover:-translate-y-1 hover:border-[#e8b923] hover:shadow-[0_18px_60px_rgb(38_40_43_/_0.14)]">
+          <div class="grid size-12 place-items-center rounded-lg bg-[rgb(232_185_35_/_0.16)] text-xl font-black text-[#b88f17]">😊</div>
+          <h3 class="mt-5 text-base font-black text-[#26282b]">Customer Satisfaction</h3>
+          <p class="mt-2 text-sm leading-6 text-[#3a3c3f]">Your happiness is our success — we go above and beyond for every client.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- TEAM SECTION -->
-  <section class="section-gray">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Meet The Team</span>
-        <h2 class="section-title">Leadership Team</h2>
-        <p class="section-subtitle">The visionaries driving JCK's commitment to construction excellence.</p>
+  <!-- TEAM -->
+  <section class="bg-[#26282b] py-16 text-[#efede7] sm:py-20 lg:py-24">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <p class="text-xs font-black uppercase tracking-[0.22em] text-[#e8b923]">Meet The Team</p>
+        <h2 class="mt-4 text-3xl font-black leading-tight sm:text-4xl lg:text-5xl">Leadership team.</h2>
+        <p class="mt-5 max-w-2xl leading-8 text-[#d8d5ce]">The visionaries driving JCK's commitment to construction excellence.</p>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:30px;">
-        <div class="reveal" style="text-align:center;padding:40px 24px;background:var(--white);border-radius:var(--radius-lg);border:1px solid var(--gray-200);transition:all var(--transition-base);">
-          <div style="width:100px;height:100px;border-radius:50%;background:var(--gradient-gold);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--navy);">JK</div>
-          <h4 style="font-family:var(--font-heading);font-size:1.1rem;font-weight:600;color:var(--navy);">Jayesh Kumar</h4>
-          <p style="font-size:0.85rem;color:var(--gold);font-weight:500;margin:4px 0 12px;">Founder & Managing Director</p>
-          <p style="font-size:0.9rem;color:var(--gray-500);line-height:1.6;">With 20+ years of experience in construction, Jayesh leads JCK with a vision of transforming the building industry through innovation and quality.</p>
-        </div>
-        <div class="reveal" style="text-align:center;padding:40px 24px;background:var(--white);border-radius:var(--radius-lg);border:1px solid var(--gray-200);transition:all var(--transition-base);">
-          <div style="width:100px;height:100px;border-radius:50%;background:var(--gradient-gold);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--navy);">CK</div>
-          <h4 style="font-family:var(--font-heading);font-size:1.1rem;font-weight:600;color:var(--navy);">Chandra Kumar</h4>
-          <p style="font-size:0.85rem;color:var(--gold);font-weight:500;margin:4px 0 12px;">Chief Architect</p>
-          <p style="font-size:0.9rem;color:var(--gray-500);line-height:1.6;">An award-winning architect with a passion for sustainable design, Chandra brings creative vision to every project.</p>
-        </div>
-        <div class="reveal" style="text-align:center;padding:40px 24px;background:var(--white);border-radius:var(--radius-lg);border:1px solid var(--gray-200);transition:all var(--transition-base);">
-          <div style="width:100px;height:100px;border-radius:50%;background:var(--gradient-gold);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--navy);">KR</div>
-          <h4 style="font-family:var(--font-heading);font-size:1.1rem;font-weight:600;color:var(--navy);">Kavitha Rao</h4>
-          <p style="font-size:0.85rem;color:var(--gold);font-weight:500;margin:4px 0 12px;">Head of Interior Design</p>
-          <p style="font-size:0.9rem;color:var(--gray-500);line-height:1.6;">Kavitha's eye for detail and modern aesthetics transforms ordinary spaces into extraordinary living experiences.</p>
-        </div>
+      <div class="mt-10 grid gap-4 md:grid-cols-3">
+        <article class="reveal rounded-lg border border-[rgb(239_237_231_/_0.16)] bg-[rgb(239_237_231_/_0.06)] p-6 text-center transition hover:-translate-y-1 hover:border-[#e8b923]">
+          <div class="mx-auto grid size-20 place-items-center rounded-full bg-[#e8b923] font-['Integral_CF',Arial,sans-serif] text-2xl font-black text-[#26282b]">JK</div>
+          <h3 class="mt-5 text-lg font-black text-[#efede7]">Jayesh Kumar</h3>
+          <p class="mt-1 text-sm font-bold text-[#e8b923]">Founder &amp; Managing Director</p>
+          <p class="mt-4 text-sm leading-6 text-[#d8d5ce]">With 20+ years of experience, Jayesh leads JCK with a vision of transforming the building industry through innovation and quality.</p>
+        </article>
+        <article class="reveal rounded-lg border border-[rgb(239_237_231_/_0.16)] bg-[rgb(239_237_231_/_0.06)] p-6 text-center transition hover:-translate-y-1 hover:border-[#e8b923]">
+          <div class="mx-auto grid size-20 place-items-center rounded-full bg-[#e8b923] font-['Integral_CF',Arial,sans-serif] text-2xl font-black text-[#26282b]">CK</div>
+          <h3 class="mt-5 text-lg font-black text-[#efede7]">Chandra Kumar</h3>
+          <p class="mt-1 text-sm font-bold text-[#e8b923]">Chief Architect</p>
+          <p class="mt-4 text-sm leading-6 text-[#d8d5ce]">An award-winning architect with a passion for sustainable design, Chandra brings creative vision to every project.</p>
+        </article>
+        <article class="reveal rounded-lg border border-[rgb(239_237_231_/_0.16)] bg-[rgb(239_237_231_/_0.06)] p-6 text-center transition hover:-translate-y-1 hover:border-[#e8b923]">
+          <div class="mx-auto grid size-20 place-items-center rounded-full bg-[#e8b923] font-['Integral_CF',Arial,sans-serif] text-2xl font-black text-[#26282b]">KR</div>
+          <h3 class="mt-5 text-lg font-black text-[#efede7]">Kavitha Rao</h3>
+          <p class="mt-1 text-sm font-bold text-[#e8b923]">Head of Interior Design</p>
+          <p class="mt-4 text-sm leading-6 text-[#d8d5ce]">Kavitha's eye for detail and modern aesthetics transforms ordinary spaces into extraordinary living experiences.</p>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="cta-section">
-    <div class="container">
-      <h2 class="cta-title reveal">Ready to Start Your <span style="color:var(--gold);">Project?</span></h2>
-      <p class="cta-subtitle reveal">Partner with a team that combines experience, innovation, and passion.</p>
-      <div class="cta-buttons reveal">
-        <a href="contact.html" class="btn btn-primary">Contact Us →</a>
-        <a href="projects.html" class="btn btn-secondary">View Projects ▸</a>
+  <section class="bg-[#efede7] py-16 sm:py-20 lg:py-24">
+    <div class="mx-auto grid w-full max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[1fr_0.65fr] lg:items-center lg:px-8">
+      <div>
+        <p class="text-xs font-black uppercase tracking-[0.22em] text-[#e8b923]">Work With Us</p>
+        <h2 class="mt-4 max-w-3xl text-3xl font-black leading-tight text-[#26282b] sm:text-4xl lg:text-5xl">Ready to start your project? Let's build it together.</h2>
+      </div>
+      <div class="flex flex-col gap-3 sm:flex-row lg:flex-col">
+        <a class="inline-flex min-h-12 items-center justify-center rounded bg-[#e8b923] px-5 py-3 text-sm font-black text-[#26282b] transition hover:-translate-y-0.5 hover:bg-[color-mix(in_srgb,#e8b923_86%,#efede7)]" href="contact.html">Contact Us</a>
+        <a class="inline-flex min-h-12 items-center justify-center rounded border border-[rgb(38_40_43_/_0.18)] px-5 py-3 text-sm font-black text-[#26282b] transition hover:-translate-y-0.5 hover:border-[#e8b923]" href="projects.html">View Projects</a>
       </div>
     </div>
   </section>
@@ -166,7 +179,7 @@
         </div>
         <div>
           <h3 class="border-b border-[rgb(239_237_231_/_0.28)] pb-3 text-lg font-black">Company</h3>
-          <div class="mt-5 grid gap-3 text-sm font-semibold text-[#d8d5ce]"><a href="about.html">About JCK</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a></div>
+          <div class="mt-5 grid gap-3 text-sm font-semibold text-[#d8d5ce]"><a href="about.html">About JCK</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="process.html">Process</a><a href="testimonials.html">Testimonials</a></div>
         </div>
         <div>
           <h3 class="border-b border-[rgb(239_237_231_/_0.28)] pb-3 text-lg font-black">Services</h3>

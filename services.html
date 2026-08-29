@@ -10,139 +10,153 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar" id="navbar">
-    <div class="container">
-      <a href="index.html" class="nav-logo"><img class="nav-logo-mark" src="assets/jck-logo-transparent.png" alt="JCK Builders & Interior LLP" /></a>
-      <div class="nav-links" id="nav-links">
-        <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html" class="active">Services</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
-        <div class="nav-cta"><a href="contact.html" class="btn btn-primary">Get Quote</a></div>
+    <!-- NAVBAR -->
+  <header class="fixed inset-x-0 top-0 z-50 text-[#efede7] transition-[background,background-color,border-color,box-shadow,backdrop-filter] duration-500 data-[state=active]:border-b data-[state=active]:border-[rgb(232_185_35_/_0.16)] data-[state=active]:bg-[rgb(38_40_43_/_0.30)] data-[state=active]:shadow-[0_12px_40px_rgb(47_41_35_/_0.22)] data-[state=active]:backdrop-blur-xl" data-site-header>
+    <nav class="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <a href="index.html" class="flex items-center gap-3" aria-label="JCK Builder's home">
+        <img class="h-16 w-auto max-w-[15rem] flex-none object-contain sm:max-w-[18rem]" src="assets/jck-logo-transparent.png" alt="JCK Builders & Interior LLP" />
+      </a>
+      <button class="inline-flex size-11 items-center justify-center rounded-lg border border-[rgb(239_237_231_/_0.24)] bg-[rgb(239_237_231_/_0.07)] text-[#efede7] backdrop-blur lg:hidden" data-menu-toggle aria-label="Open navigation" aria-expanded="false">
+        <span class="h-0.5 w-5 bg-current before:block before:h-0.5 before:w-5 before:-translate-y-2 before:bg-current before:content-[''] after:block after:h-0.5 after:w-5 after:translate-y-1.5 after:bg-current after:content-['']"></span>
+      </button>
+      <div class="absolute left-4 right-4 top-24 hidden rounded-lg p-4 lg:static lg:block lg:p-0 max-lg:border max-lg:border-[rgb(239_237_231_/_0.14)] max-lg:bg-[rgb(38_40_43_/_0.95)] max-lg:shadow-[0_22px_70px_rgb(38_40_43_/_0.3)] max-lg:backdrop-blur-2xl" data-menu>
+        <div class="relative flex flex-col gap-1 text-sm font-semibold text-[#efede7] lg:flex-row lg:items-center lg:gap-2">
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="index.html">Home</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="about.html">About</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#e8b923] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-100 before:rounded-full before:bg-[#e8b923] before:content-['']" href="services.html">Services</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="projects.html">Projects</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="gallery.html">Gallery</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="process.html">Process</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="testimonials.html">Testimonials</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="contact.html">Contact</a>
+          <a class="mt-2 inline-flex min-h-11 items-center justify-center rounded bg-[#e8b923] px-5 py-3 text-sm font-black text-[#26282b] shadow-sm transition hover:bg-[color-mix(in_srgb,#e8b923_86%,#efede7)] lg:ml-2 lg:mt-0" href="contact.html">Get Quote</a>
+        </div>
       </div>
-      <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
   <!-- PAGE HEADER -->
   <section class="page-header">
     <div class="container">
       <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Services</span></div>
-      <h1 class="section-title" style="margin-top:12px;">Our Services</h1>
-      <p class="section-subtitle light">Comprehensive building and design solutions for every need</p>
+      <h1 class="page-title">Our Services</h1>
+      <p class="page-subtitle">Comprehensive building and design solutions for every need</p>
     </div>
   </section>
 
   <!-- CONSTRUCTION SERVICES -->
-  <div class="service-detail-section">
-    <div class="container">
-      <div class="service-detail-grid reveal">
-        <div class="service-detail-image">
-          <img src="assets/hero-construction.png" alt="Construction Services">
-        </div>
-        <div class="service-detail-content">
-          <span class="section-label">Construction</span>
-          <h3>Building Construction Services</h3>
-          <p>From foundation to finishing, we deliver end-to-end construction solutions with uncompromising quality. Our team of experienced engineers and skilled workers ensures every structure is built to last.</p>
-          <ul class="service-list">
-            <li>Residential Construction — Individual homes & apartments</li>
-            <li>Villa Construction — Luxury custom-designed villas</li>
-            <li>Commercial Construction — Office buildings & retail spaces</li>
-            <li>Industrial Construction — Warehouses & factory buildings</li>
-            <li>Institutional Projects — Schools, hospitals & community centers</li>
+  <section class="bg-[#efede7] py-16 sm:py-20 lg:py-24">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center reveal">
+        <img class="aspect-[4/3] w-full object-cover rounded-lg" src="assets/hero-construction.png" alt="Construction Services">
+        <div>
+          <p class="text-xs font-black uppercase tracking-[0.22em] text-[#e8b923]">Construction</p>
+          <h2 class="mt-4 text-3xl font-black leading-tight text-[#26282b] sm:text-4xl lg:text-5xl">Building Construction Services</h2>
+          <p class="mt-5 max-w-xl leading-8 text-[#3a3c3f]">From foundation to finishing, we deliver end-to-end construction solutions with uncompromising quality. Our team of experienced engineers and skilled workers ensures every structure is built to last.</p>
+          <ul class="mt-6 grid gap-3 text-sm leading-6 text-[#3a3c3f]">
+            <li class="flex gap-3"><span class="mt-2 size-2 rounded-full bg-[#e8b923]"></span><span>Residential Construction — Individual homes &amp; apartments</span></li>
+            <li class="flex gap-3"><span class="mt-2 size-2 rounded-full bg-[#e8b923]"></span><span>Villa Construction — Luxury custom-designed villas</span></li>
+            <li class="flex gap-3"><span class="mt-2 size-2 rounded-full bg-[#e8b923]"></span><span>Commercial Construction — Office buildings &amp; retail spaces</span></li>
+            <li class="flex gap-3"><span class="mt-2 size-2 rounded-full bg-[#e8b923]"></span><span>Industrial Construction — Warehouses &amp; factory buildings</span></li>
+            <li class="flex gap-3"><span class="mt-2 size-2 rounded-full bg-[#e8b923]"></span><span>Institutional Projects — Schools, hospitals &amp; community centers</span></li>
           </ul>
-          <a href="contact.html" class="btn btn-primary" style="margin-top:24px;">Get Quote →</a>
+          <a class="mt-8 inline-flex min-h-11 items-center justify-center rounded bg-[#e8b923] px-5 py-3 text-sm font-black text-[#26282b] shadow-sm transition hover:-translate-y-0.5 hover:bg-[color-mix(in_srgb,#e8b923_86%,#efede7)]" href="contact.html">Get Quote</a>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- ARCHITECTURE -->
-  <div class="service-detail-section">
-    <div class="container">
-      <div class="service-detail-grid reveal">
-        <div class="service-detail-image">
-          <img src="assets/project-villa.png" alt="Architecture & Planning">
-        </div>
-        <div class="service-detail-content">
-          <span class="section-label">Architecture</span>
-          <h3>Architecture & Planning</h3>
-          <p>Our architects blend creativity with precision to create designs that are both aesthetically stunning and structurally sound. Every detail is carefully planned to maximize space, light, and functionality.</p>
-          <ul class="service-list">
-            <li>Floor Planning — Optimized space utilization</li>
-            <li>Structural Design — Safe, durable engineering</li>
-            <li>3D Elevation Design — Photorealistic visualizations</li>
-            <li>Site Analysis — Comprehensive location assessment</li>
-            <li>Building Permits — Complete documentation support</li>
+  <section class="bg-[#26282b] py-16 text-[#efede7] sm:py-20 lg:py-24">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center reveal">
+        <div class="order-2 lg:order-1">
+          <p class="text-xs font-black uppercase tracking-[0.22em] text-[#e8b923]">Architecture</p>
+          <h2 class="mt-4 text-3xl font-black leading-tight sm:text-4xl lg:text-5xl">Architecture &amp; Planning</h2>
+          <p class="mt-5 max-w-xl leading-8 text-[#d8d5ce]">Our architects blend creativity with precision to create designs that are both aesthetically stunning and structurally sound. Every detail is carefully planned to maximize space, light, and functionality.</p>
+          <ul class="mt-6 grid gap-3 text-sm leading-6 text-[#d8d5ce]">
+            <li class="flex gap-3"><span class="mt-2 size-2 rounded-full bg-[#e8b923]"></span><span>Floor Planning — Optimized space utilization</span></li>
+            <li class="flex gap-3"><span class="mt-2 size-2 rounded-full bg-[#e8b923]"></span><span>Structural Design — Safe, durable engineering</span></li>
+            <li class="flex gap-3"><span class="mt-2 size-2 rounded-full bg-[#e8b923]"></span><span>3D Elevation Design — Photorealistic visualizations</span></li>
+            <li class="flex gap-3"><span class="mt-2 size-2 rounded-full bg-[#e8b923]"></span><span>Site Analysis — Comprehensive location assessment</span></li>
+            <li class="flex gap-3"><span class="mt-2 size-2 rounded-full bg-[#e8b923]"></span><span>Building Permits — Complete documentation support</span></li>
           </ul>
-          <a href="contact.html" class="btn btn-primary" style="margin-top:24px;">Get Quote →</a>
+          <a class="mt-8 inline-flex min-h-11 w-fit items-center justify-center rounded bg-[#e8b923] px-5 py-3 text-sm font-black text-[#26282b] transition hover:-translate-y-0.5 hover:bg-[color-mix(in_srgb,#e8b923_86%,#efede7)]" href="contact.html">Get Quote</a>
         </div>
+        <img class="order-1 aspect-[4/3] w-full object-cover rounded-lg lg:order-2" src="assets/project-villa.png" alt="Architecture &amp; Planning">
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- INTERIOR DESIGN -->
-  <div class="service-detail-section">
-    <div class="container">
-      <div class="service-detail-grid reveal">
-        <div class="service-detail-image">
-          <img src="assets/interior-living.png" alt="Interior Design">
-        </div>
-        <div class="service-detail-content">
-          <span class="section-label">Interiors</span>
-          <h3>Interior Design</h3>
-          <p>Transform your spaces into elegant, functional environments that reflect your personality. Our designers combine modern aesthetics with practical design to create interiors that inspire.</p>
-          <ul class="service-list">
-            <li>Living Room Design — Sophisticated entertainment spaces</li>
-            <li>Kitchen Design — Modern, functional culinary spaces</li>
-            <li>Bedroom Design — Serene, comfortable retreats</li>
-            <li>Office Interiors — Productive work environments</li>
-            <li>Custom Furniture — Bespoke pieces tailored to your space</li>
+  <section class="bg-[#efede7] py-16 sm:py-20 lg:py-24">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center reveal">
+        <img class="aspect-[4/3] w-full object-cover rounded-lg" src="assets/interior-living.png" alt="Interior Design">
+        <div>
+          <p class="text-xs font-black uppercase tracking-[0.22em] text-[#e8b923]">Interiors</p>
+          <h2 class="mt-4 text-3xl font-black leading-tight text-[#26282b] sm:text-4xl lg:text-5xl">Interior Design</h2>
+          <p class="mt-5 max-w-xl leading-8 text-[#3a3c3f]">Transform your spaces into elegant, functional environments that reflect your personality. Our designers combine modern aesthetics with practical design to create interiors that inspire.</p>
+          <ul class="mt-6 grid gap-3 text-sm leading-6 text-[#3a3c3f]">
+            <li class="flex gap-3"><span class="mt-2 size-2 rounded-full bg-[#e8b923]"></span><span>Living Room Design — Sophisticated entertainment spaces</span></li>
+            <li class="flex gap-3"><span class="mt-2 size-2 rounded-full bg-[#e8b923]"></span><span>Kitchen Design — Modern, functional culinary spaces</span></li>
+            <li class="flex gap-3"><span class="mt-2 size-2 rounded-full bg-[#e8b923]"></span><span>Bedroom Design — Serene, comfortable retreats</span></li>
+            <li class="flex gap-3"><span class="mt-2 size-2 rounded-full bg-[#e8b923]"></span><span>Office Interiors — Productive work environments</span></li>
+            <li class="flex gap-3"><span class="mt-2 size-2 rounded-full bg-[#e8b923]"></span><span>Custom Furniture — Bespoke pieces tailored to your space</span></li>
           </ul>
-          <a href="contact.html" class="btn btn-primary" style="margin-top:24px;">Get Quote →</a>
+          <a class="mt-8 inline-flex min-h-11 items-center justify-center rounded bg-[#e8b923] px-5 py-3 text-sm font-black text-[#26282b] shadow-sm transition hover:-translate-y-0.5 hover:bg-[color-mix(in_srgb,#e8b923_86%,#efede7)]" href="contact.html">Get Quote</a>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- RENOVATION -->
-  <div class="service-detail-section">
-    <div class="container">
-      <div class="service-detail-grid reveal">
-        <div class="service-detail-image">
-          <img src="assets/interior-kitchen.png" alt="Renovation Services">
-        </div>
-        <div class="service-detail-content">
-          <span class="section-label">Renovation</span>
-          <h3>Renovation & Remodeling</h3>
-          <p>Breathe new life into existing spaces with our expert renovation services. Whether it's a complete overhaul or targeted upgrades, we transform outdated properties into modern masterpieces.</p>
-          <ul class="service-list">
-            <li>Home Renovation — Complete home makeovers</li>
-            <li>Office Renovation — Modern workspace upgrades</li>
-            <li>Kitchen Remodeling — Contemporary kitchen transformations</li>
-            <li>Bathroom Renovation — Spa-like bathroom upgrades</li>
-            <li>Structural Repairs — Foundation and structural reinforcement</li>
+  <section class="bg-[#26282b] py-16 text-[#efede7] sm:py-20 lg:py-24">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center reveal">
+        <div class="order-2 lg:order-1">
+          <p class="text-xs font-black uppercase tracking-[0.22em] text-[#e8b923]">Renovation</p>
+          <h2 class="mt-4 text-3xl font-black leading-tight sm:text-4xl lg:text-5xl">Renovation &amp; Remodeling</h2>
+          <p class="mt-5 max-w-xl leading-8 text-[#d8d5ce]">Breathe new life into existing spaces with our expert renovation services. Whether it's a complete overhaul or targeted upgrades, we transform outdated properties into modern masterpieces.</p>
+          <ul class="mt-6 grid gap-3 text-sm leading-6 text-[#d8d5ce]">
+            <li class="flex gap-3"><span class="mt-2 size-2 rounded-full bg-[#e8b923]"></span><span>Home Renovation — Complete home makeovers</span></li>
+            <li class="flex gap-3"><span class="mt-2 size-2 rounded-full bg-[#e8b923]"></span><span>Office Renovation — Modern workspace upgrades</span></li>
+            <li class="flex gap-3"><span class="mt-2 size-2 rounded-full bg-[#e8b923]"></span><span>Kitchen Remodeling — Contemporary kitchen transformations</span></li>
+            <li class="flex gap-3"><span class="mt-2 size-2 rounded-full bg-[#e8b923]"></span><span>Bathroom Renovation — Spa-like bathroom upgrades</span></li>
+            <li class="flex gap-3"><span class="mt-2 size-2 rounded-full bg-[#e8b923]"></span><span>Structural Repairs — Foundation and structural reinforcement</span></li>
           </ul>
-          <a href="contact.html" class="btn btn-primary" style="margin-top:24px;">Get Quote →</a>
+          <a class="mt-8 inline-flex min-h-11 w-fit items-center justify-center rounded bg-[#e8b923] px-5 py-3 text-sm font-black text-[#26282b] transition hover:-translate-y-0.5 hover:bg-[color-mix(in_srgb,#e8b923_86%,#efede7)]" href="contact.html">Get Quote</a>
         </div>
+        <img class="order-1 aspect-[4/3] w-full object-cover rounded-lg lg:order-2" src="assets/interior-kitchen.png" alt="Renovation Services">
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- COST ESTIMATOR -->
-  <section class="section-gray">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Smart Tool</span>
-        <h2 class="section-title">Get Instant Cost Estimate</h2>
-        <p class="section-subtitle">Enter your project details below and get an approximate cost range instantly.</p>
+  <section class="bg-[#efede7] py-16 sm:py-20 lg:py-24">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-3xl text-center reveal">
+        <p class="text-xs font-black uppercase tracking-[0.22em] text-[#e8b923]">Smart Tool</p>
+        <h2 class="mt-4 text-3xl font-black leading-tight text-[#26282b] sm:text-4xl lg:text-5xl">Get Instant Cost Estimate</h2>
+        <p class="mt-5 leading-8 text-[#3a3c3f]">Enter your project details below and get an approximate cost range instantly.</p>
       </div>
-      <div class="estimator-card reveal">
-        <h3>Construction Cost Calculator</h3>
-        <p>Quick and easy cost estimation for your next project.</p>
-        <form id="estimator-form">
-          <div class="form-group"><label for="plot-area">Plot Area (sq.ft.)</label><input type="number" id="plot-area" placeholder="e.g. 1200" min="100" required></div>
-          <div class="form-group"><label for="num-floors">Number of Floors</label><select id="num-floors"><option value="1">1 Floor</option><option value="2" selected>2 Floors</option><option value="3">3 Floors</option><option value="4">4 Floors</option></select></div>
-          <div class="form-group"><label for="building-type">Building Type</label><select id="building-type"><option value="residential">Residential</option><option value="villa">Villa</option><option value="commercial">Commercial</option><option value="renovation">Renovation</option></select></div>
-          <button type="submit" class="btn btn-primary" style="width:100%;">Calculate →</button>
+      <div class="mx-auto mt-10 max-w-xl rounded-lg border border-[rgb(38_40_43_/_0.12)] bg-[#f8f6f0] p-8 shadow-sm reveal">
+        <h3 class="text-lg font-black text-[#26282b]">Construction Cost Calculator</h3>
+        <p class="mt-2 text-sm leading-6 text-[#3a3c3f]">Quick and easy cost estimation for your next project.</p>
+        <form id="estimator-form" class="mt-6 grid gap-5">
+          <div>
+            <label class="mb-2 block text-sm font-bold text-[#26282b]" for="plot-area">Plot Area (sq.ft.)</label>
+            <input class="w-full rounded border border-[rgb(38_40_43_/_0.16)] bg-[#fff] px-4 py-3 text-sm text-[#26282b] outline-none transition focus:border-[#e8b923]" type="number" id="plot-area" placeholder="e.g. 1200" min="100" required>
+          </div>
+          <div>
+            <label class="mb-2 block text-sm font-bold text-[#26282b]" for="num-floors">Number of Floors</label>
+            <select class="w-full rounded border border-[rgb(38_40_43_/_0.16)] bg-[#fff] px-4 py-3 text-sm text-[#26282b] outline-none transition focus:border-[#e8b923]" id="num-floors"><option value="1">1 Floor</option><option value="2" selected>2 Floors</option><option value="3">3 Floors</option><option value="4">4 Floors</option></select>
+          </div>
+          <div>
+            <label class="mb-2 block text-sm font-bold text-[#26282b]" for="building-type">Building Type</label>
+            <select class="w-full rounded border border-[rgb(38_40_43_/_0.16)] bg-[#fff] px-4 py-3 text-sm text-[#26282b] outline-none transition focus:border-[#e8b923]" id="building-type"><option value="residential">Residential</option><option value="villa">Villa</option><option value="commercial">Commercial</option><option value="renovation">Renovation</option></select>
+          </div>
+          <button class="mt-2 w-full inline-flex min-h-11 items-center justify-center rounded bg-[#e8b923] px-5 py-3 text-sm font-black text-[#26282b] shadow-sm transition hover:-translate-y-0.5 hover:bg-[color-mix(in_srgb,#e8b923_86%,#efede7)]" type="submit">Calculate</button>
         </form>
         <div class="estimate-result" id="estimate-result"><div class="amount"></div><div class="note"></div></div>
       </div>
@@ -150,11 +164,16 @@
   </section>
 
   <!-- CTA -->
-  <section class="cta-section">
-    <div class="container">
-      <h2 class="cta-title reveal">Need a Custom <span style="color:var(--gold);">Solution?</span></h2>
-      <p class="cta-subtitle reveal">Every project is unique. Let's discuss your specific requirements and create a tailored plan.</p>
-      <div class="cta-buttons reveal"><a href="contact.html" class="btn btn-primary">Get Free Consultation →</a></div>
+  <section class="bg-[#efede7] py-16 sm:py-20 lg:py-24">
+    <div class="mx-auto grid w-full max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[1fr_0.65fr] lg:items-center lg:px-8">
+      <div class="reveal">
+        <p class="text-xs font-black uppercase tracking-[0.22em] text-[#e8b923]">Need a Custom Solution?</p>
+        <h2 class="mt-4 max-w-3xl text-3xl font-black leading-tight text-[#26282b] sm:text-4xl lg:text-5xl">Every project is unique. Let's discuss your requirements and create a tailored plan.</h2>
+      </div>
+      <div class="flex flex-col gap-3 sm:flex-row lg:flex-col reveal">
+        <a class="inline-flex min-h-12 items-center justify-center rounded bg-[#e8b923] px-5 py-3 text-sm font-black text-[#26282b] transition hover:-translate-y-0.5 hover:bg-[color-mix(in_srgb,#e8b923_86%,#efede7)]" href="contact.html">Get Free Consultation</a>
+        <a class="inline-flex min-h-12 items-center justify-center rounded border border-[rgb(38_40_43_/_0.18)] px-5 py-3 text-sm font-black text-[#26282b] transition hover:-translate-y-0.5 hover:border-[#e8b923]" href="https://wa.me/919876543210" target="_blank" rel="noreferrer">Chat on WhatsApp</a>
+      </div>
     </div>
   </section>
 
@@ -168,7 +187,7 @@
           </div>
           <div>
             <h3 class="border-b border-[rgb(239_237_231_/_0.28)] pb-3 text-lg font-black">Company</h3>
-            <div class="mt-5 grid gap-3 text-sm font-semibold text-[#d8d5ce]"><a href="about.html">About JCK</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a></div>
+            <div class="mt-5 grid gap-3 text-sm font-semibold text-[#d8d5ce]"><a href="about.html">About JCK</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="process.html">Process</a><a href="testimonials.html">Testimonials</a></div>
           </div>
           <div>
             <h3 class="border-b border-[rgb(239_237_231_/_0.28)] pb-3 text-lg font-black">Services</h3>

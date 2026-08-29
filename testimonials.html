@@ -10,139 +10,166 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar" id="navbar">
-    <div class="container">
-      <a href="index.html" class="nav-logo"><img class="nav-logo-mark" src="assets/jck-logo-transparent.png" alt="JCK Builders & Interior LLP" /></a>
-      <div class="nav-links" id="nav-links">
-        <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
-        <div class="nav-cta"><a href="contact.html" class="btn btn-primary">Get Quote</a></div>
+    <!-- NAVBAR -->
+  <header class="fixed inset-x-0 top-0 z-50 text-[#efede7] transition-[background,background-color,border-color,box-shadow,backdrop-filter] duration-500 data-[state=active]:border-b data-[state=active]:border-[rgb(232_185_35_/_0.16)] data-[state=active]:bg-[rgb(38_40_43_/_0.30)] data-[state=active]:shadow-[0_12px_40px_rgb(47_41_35_/_0.22)] data-[state=active]:backdrop-blur-xl" data-site-header>
+    <nav class="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <a href="index.html" class="flex items-center gap-3" aria-label="JCK Builder's home">
+        <img class="h-16 w-auto max-w-[15rem] flex-none object-contain sm:max-w-[18rem]" src="assets/jck-logo-transparent.png" alt="JCK Builders & Interior LLP" />
+      </a>
+      <button class="inline-flex size-11 items-center justify-center rounded-lg border border-[rgb(239_237_231_/_0.24)] bg-[rgb(239_237_231_/_0.07)] text-[#efede7] backdrop-blur lg:hidden" data-menu-toggle aria-label="Open navigation" aria-expanded="false">
+        <span class="h-0.5 w-5 bg-current before:block before:h-0.5 before:w-5 before:-translate-y-2 before:bg-current before:content-[''] after:block after:h-0.5 after:w-5 after:translate-y-1.5 after:bg-current after:content-['']"></span>
+      </button>
+      <div class="absolute left-4 right-4 top-24 hidden rounded-lg p-4 lg:static lg:block lg:p-0 max-lg:border max-lg:border-[rgb(239_237_231_/_0.14)] max-lg:bg-[rgb(38_40_43_/_0.95)] max-lg:shadow-[0_22px_70px_rgb(38_40_43_/_0.3)] max-lg:backdrop-blur-2xl" data-menu>
+        <div class="relative flex flex-col gap-1 text-sm font-semibold text-[#efede7] lg:flex-row lg:items-center lg:gap-2">
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="index.html">Home</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="about.html">About</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="services.html">Services</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="projects.html">Projects</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="gallery.html">Gallery</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="process.html">Process</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#e8b923] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-100 before:rounded-full before:bg-[#e8b923] before:content-['']" href="testimonials.html">Testimonials</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="contact.html">Contact</a>
+          <a class="mt-2 inline-flex min-h-11 items-center justify-center rounded bg-[#e8b923] px-5 py-3 text-sm font-black text-[#26282b] shadow-sm transition hover:bg-[color-mix(in_srgb,#e8b923_86%,#efede7)] lg:ml-2 lg:mt-0" href="contact.html">Get Quote</a>
+        </div>
       </div>
-      <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
   <!-- PAGE HEADER -->
   <section class="page-header">
     <div class="container">
       <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Testimonials</span></div>
-      <h1 class="section-title" style="margin-top:12px;">Client Testimonials</h1>
-      <p class="section-subtitle light">What our clients say about working with JCK Builder's</p>
+      <h1 class="page-title">Client Testimonials</h1>
+      <p class="page-subtitle">What our clients say about working with JCK Builder's</p>
     </div>
   </section>
 
   <!-- REVIEWS GRID -->
-  <section>
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Reviews</span>
-        <h2 class="section-title">Trusted by Hundreds of Clients</h2>
-        <p class="section-subtitle">Our clients' satisfaction speaks louder than any marketing. Read their genuine experiences.</p>
+  <section class="bg-[#efede7] py-16 sm:py-20 lg:py-24">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-3xl text-center reveal">
+        <p class="text-xs font-black uppercase tracking-[0.22em] text-[#e8b923]">Reviews</p>
+        <h2 class="mt-4 text-3xl font-black leading-tight text-[#26282b] sm:text-4xl lg:text-5xl">Trusted by Hundreds of Clients</h2>
+        <p class="mt-5 leading-8 text-[#3a3c3f]">Our clients' satisfaction speaks louder than any marketing. Read their genuine experiences.</p>
       </div>
-      <div class="reviews-grid">
+      <div class="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
         <!-- Review 1 -->
-        <div class="review-card reveal">
-          <div class="review-header">
-            <div class="review-avatar">RK</div>
-            <div class="review-info"><h4>Rajesh Kumar</h4><span>Homeowner, Bangalore</span></div>
+        <article class="relative overflow-hidden rounded-lg border border-[rgb(38_40_43_/_0.14)] bg-[#f8f6f0] p-6 shadow-sm reveal">
+          <span class="absolute right-5 top-4 text-5xl font-black leading-none text-[rgb(232_185_35_/_0.24)]">&quot;</span>
+          <div class="flex items-center gap-3">
+            <div class="grid size-11 place-items-center rounded-full bg-[rgb(232_185_35_/_0.16)] text-sm font-black text-[#b88f17]">RK</div>
+            <p class="text-[#e8b923]">★★★★★</p>
           </div>
-          <div class="review-stars">★★★★★</div>
-          <p>"JCK Builder's transformed our outdated house into a modern masterpiece. Their attention to detail and commitment to quality is unmatched. The team was professional throughout and delivered ahead of schedule. We couldn't be happier!"</p>
-        </div>
+          <p class="mt-5 leading-7 text-[#3a3c3f]">&quot;JCK Builder's transformed our outdated house into a modern masterpiece. Their attention to detail and commitment to quality is unmatched. The team was professional throughout and delivered ahead of schedule. We couldn't be happier!&quot;</p>
+          <div class="mt-6 border-t border-[rgb(38_40_43_/_0.14)] pt-4"><h4 class="font-black text-[#26282b]">Rajesh Kumar</h4><p class="mt-1 text-sm font-semibold text-[#3a3c3f]">Homeowner, Bangalore</p></div>
+        </article>
         <!-- Review 2 -->
-        <div class="review-card reveal">
-          <div class="review-header">
-            <div class="review-avatar">PS</div>
-            <div class="review-info"><h4>Priya Sharma</h4><span>CEO, TechSpace Solutions</span></div>
+        <article class="relative overflow-hidden rounded-lg border border-[rgb(38_40_43_/_0.14)] bg-[#f8f6f0] p-6 shadow-sm reveal">
+          <span class="absolute right-5 top-4 text-5xl font-black leading-none text-[rgb(232_185_35_/_0.24)]">&quot;</span>
+          <div class="flex items-center gap-3">
+            <div class="grid size-11 place-items-center rounded-full bg-[rgb(232_185_35_/_0.16)] text-sm font-black text-[#b88f17]">PS</div>
+            <p class="text-[#e8b923]">★★★★★</p>
           </div>
-          <div class="review-stars">★★★★★</div>
-          <p>"From planning to completion, the JCK team was professional, transparent, and incredibly skilled. Our new office space is exactly what we envisioned — modern, functional, and beautiful. The cost estimation was accurate to the rupee."</p>
-        </div>
+          <p class="mt-5 leading-7 text-[#3a3c3f]">&quot;From planning to completion, the JCK team was professional, transparent, and incredibly skilled. Our new office space is exactly what we envisioned — modern, functional, and beautiful. The cost estimation was accurate to the rupee.&quot;</p>
+          <div class="mt-6 border-t border-[rgb(38_40_43_/_0.14)] pt-4"><h4 class="font-black text-[#26282b]">Priya Sharma</h4><p class="mt-1 text-sm font-semibold text-[#3a3c3f]">CEO, TechSpace Solutions</p></div>
+        </article>
         <!-- Review 3 -->
-        <div class="review-card reveal">
-          <div class="review-header">
-            <div class="review-avatar">AM</div>
-            <div class="review-info"><h4>Arun Mehta</h4><span>Villa Owner, Hyderabad</span></div>
+        <article class="relative overflow-hidden rounded-lg border border-[rgb(38_40_43_/_0.14)] bg-[#f8f6f0] p-6 shadow-sm reveal">
+          <span class="absolute right-5 top-4 text-5xl font-black leading-none text-[rgb(232_185_35_/_0.24)]">&quot;</span>
+          <div class="flex items-center gap-3">
+            <div class="grid size-11 place-items-center rounded-full bg-[rgb(232_185_35_/_0.16)] text-sm font-black text-[#b88f17]">AM</div>
+            <p class="text-[#e8b923]">★★★★★</p>
           </div>
-          <div class="review-stars">★★★★★</div>
-          <p>"We hired JCK for our luxury villa project and the result exceeded all expectations. The architecture is stunning, the interior design is world-class, and the build quality is exceptional. Truly a premium experience."</p>
-        </div>
+          <p class="mt-5 leading-7 text-[#3a3c3f]">&quot;We hired JCK for our luxury villa project and the result exceeded all expectations. The architecture is stunning, the interior design is world-class, and the build quality is exceptional. Truly a premium experience.&quot;</p>
+          <div class="mt-6 border-t border-[rgb(38_40_43_/_0.14)] pt-4"><h4 class="font-black text-[#26282b]">Arun Mehta</h4><p class="mt-1 text-sm font-semibold text-[#3a3c3f]">Villa Owner, Hyderabad</p></div>
+        </article>
         <!-- Review 4 -->
-        <div class="review-card reveal">
-          <div class="review-header">
-            <div class="review-avatar">SM</div>
-            <div class="review-info"><h4>Sneha Menon</h4><span>Homeowner, Chennai</span></div>
+        <article class="relative overflow-hidden rounded-lg border border-[rgb(38_40_43_/_0.14)] bg-[#f8f6f0] p-6 shadow-sm reveal">
+          <span class="absolute right-5 top-4 text-5xl font-black leading-none text-[rgb(232_185_35_/_0.24)]">&quot;</span>
+          <div class="flex items-center gap-3">
+            <div class="grid size-11 place-items-center rounded-full bg-[rgb(232_185_35_/_0.16)] text-sm font-black text-[#b88f17]">SM</div>
+            <p class="text-[#e8b923]">★★★★★</p>
           </div>
-          <div class="review-stars">★★★★★</div>
-          <p>"The kitchen renovation JCK did for us is simply outstanding. The modular design is both beautiful and practical. Their designer understood our needs perfectly and the installation was flawless. Highly recommended!"</p>
-        </div>
+          <p class="mt-5 leading-7 text-[#3a3c3f]">&quot;The kitchen renovation JCK did for us is simply outstanding. The modular design is both beautiful and practical. Their designer understood our needs perfectly and the installation was flawless. Highly recommended!&quot;</p>
+          <div class="mt-6 border-t border-[rgb(38_40_43_/_0.14)] pt-4"><h4 class="font-black text-[#26282b]">Sneha Menon</h4><p class="mt-1 text-sm font-semibold text-[#3a3c3f]">Homeowner, Chennai</p></div>
+        </article>
         <!-- Review 5 -->
-        <div class="review-card reveal">
-          <div class="review-header">
-            <div class="review-avatar">VR</div>
-            <div class="review-info"><h4>Vikram Reddy</h4><span>Business Owner, Pune</span></div>
+        <article class="relative overflow-hidden rounded-lg border border-[rgb(38_40_43_/_0.14)] bg-[#f8f6f0] p-6 shadow-sm reveal">
+          <span class="absolute right-5 top-4 text-5xl font-black leading-none text-[rgb(232_185_35_/_0.24)]">&quot;</span>
+          <div class="flex items-center gap-3">
+            <div class="grid size-11 place-items-center rounded-full bg-[rgb(232_185_35_/_0.16)] text-sm font-black text-[#b88f17]">VR</div>
+            <p class="text-[#e8b923]">★★★★☆</p>
           </div>
-          <div class="review-stars">★★★★☆</div>
-          <p>"JCK renovated our entire commercial space — new flooring, modern lighting, complete interior redesign. The transformation was incredible. The team was responsive and the project was completed on time and within budget."</p>
-        </div>
+          <p class="mt-5 leading-7 text-[#3a3c3f]">&quot;JCK renovated our entire commercial space — new flooring, modern lighting, complete interior redesign. The transformation was incredible. The team was responsive and the project was completed on time and within budget.&quot;</p>
+          <div class="mt-6 border-t border-[rgb(38_40_43_/_0.14)] pt-4"><h4 class="font-black text-[#26282b]">Vikram Reddy</h4><p class="mt-1 text-sm font-semibold text-[#3a3c3f]">Business Owner, Pune</p></div>
+        </article>
         <!-- Review 6 -->
-        <div class="review-card reveal">
-          <div class="review-header">
-            <div class="review-avatar">AP</div>
-            <div class="review-info"><h4>Anitha Patel</h4><span>Apartment Owner, Mumbai</span></div>
+        <article class="relative overflow-hidden rounded-lg border border-[rgb(38_40_43_/_0.14)] bg-[#f8f6f0] p-6 shadow-sm reveal">
+          <span class="absolute right-5 top-4 text-5xl font-black leading-none text-[rgb(232_185_35_/_0.24)]">&quot;</span>
+          <div class="flex items-center gap-3">
+            <div class="grid size-11 place-items-center rounded-full bg-[rgb(232_185_35_/_0.16)] text-sm font-black text-[#b88f17]">AP</div>
+            <p class="text-[#e8b923]">★★★★★</p>
           </div>
-          <div class="review-stars">★★★★★</div>
-          <p>"Building our dream apartment with JCK was a seamless experience. They handled everything from permits to final finishing. The quality of construction is top-notch and the transparent pricing gave us complete peace of mind."</p>
-        </div>
+          <p class="mt-5 leading-7 text-[#3a3c3f]">&quot;Building our dream apartment with JCK was a seamless experience. They handled everything from permits to final finishing. The quality of construction is top-notch and the transparent pricing gave us complete peace of mind.&quot;</p>
+          <div class="mt-6 border-t border-[rgb(38_40_43_/_0.14)] pt-4"><h4 class="font-black text-[#26282b]">Anitha Patel</h4><p class="mt-1 text-sm font-semibold text-[#3a3c3f]">Apartment Owner, Mumbai</p></div>
+        </article>
         <!-- Review 7 -->
-        <div class="review-card reveal">
-          <div class="review-header">
-            <div class="review-avatar">MK</div>
-            <div class="review-info"><h4>Mohan Krishnan</h4><span>Retired Professional, Bangalore</span></div>
+        <article class="relative overflow-hidden rounded-lg border border-[rgb(38_40_43_/_0.14)] bg-[#f8f6f0] p-6 shadow-sm reveal">
+          <span class="absolute right-5 top-4 text-5xl font-black leading-none text-[rgb(232_185_35_/_0.24)]">&quot;</span>
+          <div class="flex items-center gap-3">
+            <div class="grid size-11 place-items-center rounded-full bg-[rgb(232_185_35_/_0.16)] text-sm font-black text-[#b88f17]">MK</div>
+            <p class="text-[#e8b923]">★★★★★</p>
           </div>
-          <div class="review-stars">★★★★★</div>
-          <p>"After researching many builders, we chose JCK for our retirement home. Best decision ever! The team is honest, skilled, and genuinely cares about client satisfaction. Our home is everything we dreamed of and more."</p>
-        </div>
+          <p class="mt-5 leading-7 text-[#3a3c3f]">&quot;After researching many builders, we chose JCK for our retirement home. Best decision ever! The team is honest, skilled, and genuinely cares about client satisfaction. Our home is everything we dreamed of and more.&quot;</p>
+          <div class="mt-6 border-t border-[rgb(38_40_43_/_0.14)] pt-4"><h4 class="font-black text-[#26282b]">Mohan Krishnan</h4><p class="mt-1 text-sm font-semibold text-[#3a3c3f]">Retired Professional, Bangalore</p></div>
+        </article>
         <!-- Review 8 -->
-        <div class="review-card reveal">
-          <div class="review-header">
-            <div class="review-avatar">DG</div>
-            <div class="review-info"><h4>Deepa Gupta</h4><span>Interior Designer Collaboration</span></div>
+        <article class="relative overflow-hidden rounded-lg border border-[rgb(38_40_43_/_0.14)] bg-[#f8f6f0] p-6 shadow-sm reveal">
+          <span class="absolute right-5 top-4 text-5xl font-black leading-none text-[rgb(232_185_35_/_0.24)]">&quot;</span>
+          <div class="flex items-center gap-3">
+            <div class="grid size-11 place-items-center rounded-full bg-[rgb(232_185_35_/_0.16)] text-sm font-black text-[#b88f17]">DG</div>
+            <p class="text-[#e8b923]">★★★★★</p>
           </div>
-          <div class="review-stars">★★★★★</div>
-          <p>"As a fellow designer, working with JCK's interior team was a delight. Their execution quality matches the most premium standards I've seen. The craftsmanship on custom furniture and joinery work is exceptional."</p>
-        </div>
+          <p class="mt-5 leading-7 text-[#3a3c3f]">&quot;As a fellow designer, working with JCK's interior team was a delight. Their execution quality matches the most premium standards I've seen. The craftsmanship on custom furniture and joinery work is exceptional.&quot;</p>
+          <div class="mt-6 border-t border-[rgb(38_40_43_/_0.14)] pt-4"><h4 class="font-black text-[#26282b]">Deepa Gupta</h4><p class="mt-1 text-sm font-semibold text-[#3a3c3f]">Interior Designer Collaboration</p></div>
+        </article>
         <!-- Review 9 -->
-        <div class="review-card reveal">
-          <div class="review-header">
-            <div class="review-avatar">SK</div>
-            <div class="review-info"><h4>Suresh Kamath</h4><span>Restaurant Owner, Goa</span></div>
+        <article class="relative overflow-hidden rounded-lg border border-[rgb(38_40_43_/_0.14)] bg-[#f8f6f0] p-6 shadow-sm reveal">
+          <span class="absolute right-5 top-4 text-5xl font-black leading-none text-[rgb(232_185_35_/_0.24)]">&quot;</span>
+          <div class="flex items-center gap-3">
+            <div class="grid size-11 place-items-center rounded-full bg-[rgb(232_185_35_/_0.16)] text-sm font-black text-[#b88f17]">SK</div>
+            <p class="text-[#e8b923]">★★★★★</p>
           </div>
-          <div class="review-stars">★★★★★</div>
-          <p>"JCK designed and built our boutique restaurant interior — the ambiance is incredible! Our customers constantly compliment the design. The project was delivered on time which was crucial for our business launch."</p>
-        </div>
+          <p class="mt-5 leading-7 text-[#3a3c3f]">&quot;JCK designed and built our boutique restaurant interior — the ambiance is incredible! Our customers constantly compliment the design. The project was delivered on time which was crucial for our business launch.&quot;</p>
+          <div class="mt-6 border-t border-[rgb(38_40_43_/_0.14)] pt-4"><h4 class="font-black text-[#26282b]">Suresh Kamath</h4><p class="mt-1 text-sm font-semibold text-[#3a3c3f]">Restaurant Owner, Goa</p></div>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- OVERALL RATING -->
-  <section class="section-dark">
-    <div class="container" style="text-align:center;">
+  <section class="bg-[#26282b] py-16 text-[#efede7] sm:py-20 lg:py-24">
+    <div class="mx-auto w-full max-w-7xl px-4 text-center sm:px-6 lg:px-8">
       <div class="reveal">
-        <span class="section-label">Overall Rating</span>
-        <div style="font-size:3rem;color:var(--gold);letter-spacing:8px;margin:16px 0;">★★★★★</div>
-        <h2 style="font-family:var(--font-display);font-size:2.5rem;color:var(--white);margin-bottom:8px;">4.9 / 5.0</h2>
-        <p style="color:var(--gray-400);font-size:1.1rem;">Based on 200+ verified client reviews</p>
+        <p class="text-xs font-black uppercase tracking-[0.22em] text-[#e8b923]">Overall Rating</p>
+        <p class="mt-6 text-5xl font-black tracking-[0.25em] text-[#e8b923]">★★★★★</p>
+        <p class="mt-6 text-4xl font-black text-[#efede7]">4.9 / 5.0</p>
+        <p class="mt-3 text-[#d8d5ce]">Based on 200+ verified client reviews</p>
       </div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="cta-section" style="background:var(--white);">
-    <div class="container">
-      <h2 class="cta-title reveal" style="color:var(--navy);">Join Our <span style="color:var(--gold);">Happy Clients</span></h2>
-      <p class="cta-subtitle reveal" style="color:var(--gray-500);">Start your project with a team that puts your satisfaction first.</p>
-      <div class="cta-buttons reveal"><a href="contact.html" class="btn btn-primary">Get Free Consultation →</a><a href="projects.html" class="btn btn-outline">View Our Projects ▸</a></div>
+  <section class="bg-[#efede7] py-16 sm:py-20 lg:py-24">
+    <div class="mx-auto grid w-full max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[1fr_0.65fr] lg:items-center lg:px-8">
+      <div class="reveal">
+        <p class="text-xs font-black uppercase tracking-[0.22em] text-[#e8b923]">Join Our Happy Clients</p>
+        <h2 class="mt-4 max-w-3xl text-3xl font-black leading-tight text-[#26282b] sm:text-4xl lg:text-5xl">Start your project with a team that puts your satisfaction first.</h2>
+      </div>
+      <div class="flex flex-col gap-3 sm:flex-row lg:flex-col reveal">
+        <a class="inline-flex min-h-11 items-center justify-center rounded bg-[#e8b923] px-5 py-3 text-sm font-black text-[#26282b] shadow-sm transition hover:-translate-y-0.5 hover:bg-[color-mix(in_srgb,#e8b923_86%,#efede7)]" href="contact.html">Get Free Consultation</a>
+        <a class="inline-flex min-h-11 items-center justify-center rounded border border-[rgb(38_40_43_/_0.18)] px-5 py-3 text-sm font-black text-[#26282b] transition hover:-translate-y-0.5 hover:border-[#e8b923]" href="projects.html">View Projects</a>
+      </div>
     </div>
   </section>
 
@@ -156,7 +183,7 @@
           </div>
           <div>
             <h3 class="border-b border-[rgb(239_237_231_/_0.28)] pb-3 text-lg font-black">Company</h3>
-            <div class="mt-5 grid gap-3 text-sm font-semibold text-[#d8d5ce]"><a href="about.html">About JCK</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a></div>
+            <div class="mt-5 grid gap-3 text-sm font-semibold text-[#d8d5ce]"><a href="about.html">About JCK</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="process.html">Process</a><a href="testimonials.html">Testimonials</a></div>
           </div>
           <div>
             <h3 class="border-b border-[rgb(239_237_231_/_0.28)] pb-3 text-lg font-black">Services</h3>

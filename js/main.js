@@ -3,6 +3,7 @@
    =================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
+  initSiteHeader();
   initNavbar();
   initMobileMenu();
   initScrollReveal();
@@ -11,6 +12,61 @@ document.addEventListener('DOMContentLoaded', () => {
   initLightbox();
   initModals();
 });
+
+/* --- Site Header (homepage-style fixed header) --- */
+function initSiteHeader() {
+  const siteHeader = document.querySelector('[data-site-header]');
+  const menuToggle = document.querySelector('[data-menu-toggle]');
+  const menu = document.querySelector('[data-menu]');
+  if (!siteHeader) return;
+
+  if (!window.location.hash && 'scrollRestoration' in window.history) {
+    window.history.scrollRestoration = 'manual';
+    window.scrollTo(0, 0);
+  }
+
+  const updateHeader = () => {
+    const scrollTop = Math.max(
+      window.scrollY,
+      document.documentElement.scrollTop || 0,
+      document.body.scrollTop || 0
+    );
+    const hasScrolled = scrollTop > 8;
+    const isActive = hasScrolled || siteHeader.dataset.menuOpen === 'true';
+    siteHeader.classList.toggle('is-scrolled', hasScrolled);
+    siteHeader.classList.toggle('is-at-top', !isActive);
+    if (isActive) {
+      siteHeader.dataset.state = 'active';
+    } else {
+      siteHeader.removeAttribute('data-state');
+    }
+  };
+
+  updateHeader();
+  requestAnimationFrame(updateHeader);
+  window.addEventListener('scroll', updateHeader, { passive: true });
+
+  siteHeader.updateHeaderState = updateHeader;
+
+  if (menuToggle && menu) {
+    menuToggle.addEventListener('click', () => {
+      const isOpen = !menu.classList.contains('hidden');
+      menu.classList.toggle('hidden', isOpen);
+      menuToggle.setAttribute('aria-expanded', String(!isOpen));
+      siteHeader.dataset.menuOpen = String(!isOpen);
+      siteHeader.updateHeaderState();
+    });
+
+    menu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        menu.classList.add('hidden');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        siteHeader.dataset.menuOpen = 'false';
+        siteHeader.updateHeaderState();
+      });
+    });
+  }
+}
 
 /* --- Sticky Navbar --- */
 function initNavbar() {

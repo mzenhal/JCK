@@ -10,80 +10,103 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar" id="navbar">
-    <div class="container">
-      <a href="index.html" class="nav-logo"><img class="nav-logo-mark" src="assets/jck-logo-transparent.png" alt="JCK Builders & Interior LLP" /></a>
-      <div class="nav-links" id="nav-links">
-        <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="gallery.html" class="active">Gallery</a><a href="contact.html">Contact</a>
-        <div class="nav-cta"><a href="contact.html" class="btn btn-primary">Get Quote</a></div>
+    <!-- NAVBAR -->
+  <header class="fixed inset-x-0 top-0 z-50 text-[#efede7] transition-[background,background-color,border-color,box-shadow,backdrop-filter] duration-500 data-[state=active]:border-b data-[state=active]:border-[rgb(232_185_35_/_0.16)] data-[state=active]:bg-[rgb(38_40_43_/_0.30)] data-[state=active]:shadow-[0_12px_40px_rgb(47_41_35_/_0.22)] data-[state=active]:backdrop-blur-xl" data-site-header>
+    <nav class="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <a href="index.html" class="flex items-center gap-3" aria-label="JCK Builder's home">
+        <img class="h-16 w-auto max-w-[15rem] flex-none object-contain sm:max-w-[18rem]" src="assets/jck-logo-transparent.png" alt="JCK Builders & Interior LLP" />
+      </a>
+      <button class="inline-flex size-11 items-center justify-center rounded-lg border border-[rgb(239_237_231_/_0.24)] bg-[rgb(239_237_231_/_0.07)] text-[#efede7] backdrop-blur lg:hidden" data-menu-toggle aria-label="Open navigation" aria-expanded="false">
+        <span class="h-0.5 w-5 bg-current before:block before:h-0.5 before:w-5 before:-translate-y-2 before:bg-current before:content-[''] after:block after:h-0.5 after:w-5 after:translate-y-1.5 after:bg-current after:content-['']"></span>
+      </button>
+      <div class="absolute left-4 right-4 top-24 hidden rounded-lg p-4 lg:static lg:block lg:p-0 max-lg:border max-lg:border-[rgb(239_237_231_/_0.14)] max-lg:bg-[rgb(38_40_43_/_0.95)] max-lg:shadow-[0_22px_70px_rgb(38_40_43_/_0.3)] max-lg:backdrop-blur-2xl" data-menu>
+        <div class="relative flex flex-col gap-1 text-sm font-semibold text-[#efede7] lg:flex-row lg:items-center lg:gap-2">
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="index.html">Home</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="about.html">About</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="services.html">Services</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="projects.html">Projects</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#e8b923] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-100 before:rounded-full before:bg-[#e8b923] before:content-['']" href="gallery.html">Gallery</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="process.html">Process</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="testimonials.html">Testimonials</a>
+          <a class="relative flex min-h-11 items-center gap-1.5 rounded-lg px-3 py-2.5 text-[#efede7] transition before:absolute before:bottom-1.5 before:left-3 before:right-3 before:h-0.5 before:origin-center before:scale-x-[0.35] before:rounded-full before:bg-[#e8b923] before:opacity-0 before:transition hover:bg-[color-mix(in_srgb,#26282b_22%,transparent)] hover:text-[#e8b923] hover:backdrop-blur hover:before:scale-x-100 hover:before:opacity-100 focus-visible:bg-[color-mix(in_srgb,#26282b_22%,transparent)] focus-visible:text-[#e8b923] focus-visible:before:scale-x-100 focus-visible:before:opacity-100" href="contact.html">Contact</a>
+          <a class="mt-2 inline-flex min-h-11 items-center justify-center rounded bg-[#e8b923] px-5 py-3 text-sm font-black text-[#26282b] shadow-sm transition hover:bg-[color-mix(in_srgb,#e8b923_86%,#efede7)] lg:ml-2 lg:mt-0" href="contact.html">Get Quote</a>
+        </div>
       </div>
-      <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
   <!-- PAGE HEADER -->
   <section class="page-header">
     <div class="container">
       <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Gallery</span></div>
-      <h1 class="section-title" style="margin-top:12px;">Our Gallery</h1>
-      <p class="section-subtitle light">Visual showcase of our finest construction and interior work</p>
+      <h1 class="page-title">Our Gallery</h1>
+      <p class="page-subtitle">Visual showcase of our finest construction and interior work</p>
     </div>
   </section>
 
   <!-- GALLERY -->
-  <section>
-    <div class="container">
-      <div class="filter-bar reveal">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="construction">Construction</button>
-        <button class="filter-btn" data-filter="interior">Interiors</button>
-        <button class="filter-btn" data-filter="planning">Planning</button>
-        <button class="filter-btn" data-filter="progress">Site Progress</button>
+  <section class="bg-[#efede7] py-16 sm:py-20 lg:py-24">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <p class="text-xs font-black uppercase tracking-[0.22em] text-[#e8b923]">Our Work</p>
+        <h2 class="mt-4 text-3xl font-black leading-tight text-[#26282b] sm:text-4xl lg:text-5xl">A visual record of construction, planning, and finished interiors.</h2>
+        <p class="mt-5 max-w-2xl leading-8 text-[#3a3c3f]">Browse construction sites, interior designs, architectural plans, and live site progress in one place.</p>
       </div>
-      <div class="gallery-grid">
-        <div class="gallery-item reveal" data-category="construction">
-          <img src="assets/hero-construction.png" alt="Construction Site">
-          <div class="gallery-item-overlay"><span>🔍</span></div>
+      <div class="filter-bar reveal mt-10 flex flex-wrap gap-2">
+        <button class="filter-btn active rounded-full border px-5 py-2 text-sm font-bold transition" data-filter="all">All</button>
+        <button class="filter-btn rounded-full border px-5 py-2 text-sm font-bold transition" data-filter="construction">Construction</button>
+        <button class="filter-btn rounded-full border px-5 py-2 text-sm font-bold transition" data-filter="interior">Interiors</button>
+        <button class="filter-btn rounded-full border px-5 py-2 text-sm font-bold transition" data-filter="planning">Planning</button>
+        <button class="filter-btn rounded-full border px-5 py-2 text-sm font-bold transition" data-filter="progress">Site Progress</button>
+      </div>
+      <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="gallery-item reveal group relative overflow-hidden rounded-lg border border-[rgb(38_40_43_/_0.12)]" data-category="construction">
+          <img class="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-105" src="assets/hero-construction.png" alt="Construction Site">
+          <div class="gallery-item-overlay absolute inset-0 grid place-items-center opacity-0 transition duration-500 group-hover:opacity-100"><span class="grid size-12 place-items-center rounded-full bg-[#e8b923] text-2xl text-[#26282b]">🔍</span></div>
         </div>
-        <div class="gallery-item reveal" data-category="interior">
-          <img src="assets/interior-living.png" alt="Living Room">
-          <div class="gallery-item-overlay"><span>🔍</span></div>
+        <div class="gallery-item reveal group relative overflow-hidden rounded-lg border border-[rgb(38_40_43_/_0.12)]" data-category="interior">
+          <img class="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-105" src="assets/interior-living.png" alt="Living Room">
+          <div class="gallery-item-overlay absolute inset-0 grid place-items-center opacity-0 transition duration-500 group-hover:opacity-100"><span class="grid size-12 place-items-center rounded-full bg-[#e8b923] text-2xl text-[#26282b]">🔍</span></div>
         </div>
-        <div class="gallery-item reveal" data-category="construction">
-          <img src="assets/project-villa.png" alt="Villa Exterior">
-          <div class="gallery-item-overlay"><span>🔍</span></div>
+        <div class="gallery-item reveal group relative overflow-hidden rounded-lg border border-[rgb(38_40_43_/_0.12)]" data-category="construction">
+          <img class="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-105" src="assets/project-villa.png" alt="Villa Exterior">
+          <div class="gallery-item-overlay absolute inset-0 grid place-items-center opacity-0 transition duration-500 group-hover:opacity-100"><span class="grid size-12 place-items-center rounded-full bg-[#e8b923] text-2xl text-[#26282b]">🔍</span></div>
         </div>
-        <div class="gallery-item reveal" data-category="interior">
-          <img src="assets/interior-kitchen.png" alt="Kitchen Design">
-          <div class="gallery-item-overlay"><span>🔍</span></div>
+        <div class="gallery-item reveal group relative overflow-hidden rounded-lg border border-[rgb(38_40_43_/_0.12)]" data-category="interior">
+          <img class="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-105" src="assets/interior-kitchen.png" alt="Kitchen Design">
+          <div class="gallery-item-overlay absolute inset-0 grid place-items-center opacity-0 transition duration-500 group-hover:opacity-100"><span class="grid size-12 place-items-center rounded-full bg-[#e8b923] text-2xl text-[#26282b]">🔍</span></div>
         </div>
-        <div class="gallery-item reveal" data-category="planning">
-          <img src="assets/project-commercial.png" alt="Commercial Building">
-          <div class="gallery-item-overlay"><span>🔍</span></div>
+        <div class="gallery-item reveal group relative overflow-hidden rounded-lg border border-[rgb(38_40_43_/_0.12)]" data-category="planning">
+          <img class="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-105" src="assets/project-commercial.png" alt="Commercial Building">
+          <div class="gallery-item-overlay absolute inset-0 grid place-items-center opacity-0 transition duration-500 group-hover:opacity-100"><span class="grid size-12 place-items-center rounded-full bg-[#e8b923] text-2xl text-[#26282b]">🔍</span></div>
         </div>
-        <div class="gallery-item reveal" data-category="interior">
-          <img src="assets/interior-bedroom.png" alt="Bedroom Design">
-          <div class="gallery-item-overlay"><span>🔍</span></div>
+        <div class="gallery-item reveal group relative overflow-hidden rounded-lg border border-[rgb(38_40_43_/_0.12)]" data-category="interior">
+          <img class="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-105" src="assets/interior-bedroom.png" alt="Bedroom Design">
+          <div class="gallery-item-overlay absolute inset-0 grid place-items-center opacity-0 transition duration-500 group-hover:opacity-100"><span class="grid size-12 place-items-center rounded-full bg-[#e8b923] text-2xl text-[#26282b]">🔍</span></div>
         </div>
-        <div class="gallery-item reveal" data-category="progress">
-          <img src="assets/hero-construction.png" alt="Site Progress">
-          <div class="gallery-item-overlay"><span>🔍</span></div>
+        <div class="gallery-item reveal group relative overflow-hidden rounded-lg border border-[rgb(38_40_43_/_0.12)]" data-category="progress">
+          <img class="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-105" src="assets/hero-construction.png" alt="Site Progress">
+          <div class="gallery-item-overlay absolute inset-0 grid place-items-center opacity-0 transition duration-500 group-hover:opacity-100"><span class="grid size-12 place-items-center rounded-full bg-[#e8b923] text-2xl text-[#26282b]">🔍</span></div>
         </div>
-        <div class="gallery-item reveal" data-category="construction">
-          <img src="assets/project-commercial.png" alt="Commercial Construction">
-          <div class="gallery-item-overlay"><span>🔍</span></div>
+        <div class="gallery-item reveal group relative overflow-hidden rounded-lg border border-[rgb(38_40_43_/_0.12)]" data-category="construction">
+          <img class="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-105" src="assets/project-commercial.png" alt="Commercial Construction">
+          <div class="gallery-item-overlay absolute inset-0 grid place-items-center opacity-0 transition duration-500 group-hover:opacity-100"><span class="grid size-12 place-items-center rounded-full bg-[#e8b923] text-2xl text-[#26282b]">🔍</span></div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="cta-section">
-    <div class="container">
-      <h2 class="cta-title reveal">Like What You <span style="color:var(--gold);">See?</span></h2>
-      <p class="cta-subtitle reveal">Let us create something equally stunning for your space.</p>
-      <div class="cta-buttons reveal"><a href="contact.html" class="btn btn-primary">Start Your Project →</a></div>
+  <section class="bg-[#efede7] py-16 sm:py-20 lg:py-24">
+    <div class="mx-auto grid w-full max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[1fr_0.65fr] lg:items-center lg:px-8">
+      <div class="reveal">
+        <p class="text-xs font-black uppercase tracking-[0.22em] text-[#e8b923]">Start With Clarity</p>
+        <h2 class="mt-4 max-w-3xl text-3xl font-black leading-tight text-[#26282b] sm:text-4xl lg:text-5xl">Like what you see? Let us create something equally stunning for your space.</h2>
+      </div>
+      <div class="reveal flex flex-col gap-3 sm:flex-row lg:flex-col">
+        <a class="inline-flex min-h-12 items-center justify-center rounded bg-[#e8b923] px-5 py-3 text-sm font-black text-[#26282b] transition hover:-translate-y-0.5 hover:bg-[color-mix(in_srgb,#e8b923_86%,#efede7)]" href="contact.html">Start Your Project →</a>
+        <a class="inline-flex min-h-12 items-center justify-center rounded border border-[rgb(38_40_43_/_0.18)] px-5 py-3 text-sm font-black text-[#26282b] transition hover:-translate-y-0.5 hover:border-[#e8b923]" href="https://wa.me/919876543210" target="_blank" rel="noreferrer">Chat on WhatsApp</a>
+      </div>
     </div>
   </section>
 
@@ -103,7 +126,7 @@
           </div>
           <div>
             <h3 class="border-b border-[rgb(239_237_231_/_0.28)] pb-3 text-lg font-black">Company</h3>
-            <div class="mt-5 grid gap-3 text-sm font-semibold text-[#d8d5ce]"><a href="about.html">About JCK</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a></div>
+            <div class="mt-5 grid gap-3 text-sm font-semibold text-[#d8d5ce]"><a href="about.html">About JCK</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="process.html">Process</a><a href="testimonials.html">Testimonials</a></div>
           </div>
           <div>
             <h3 class="border-b border-[rgb(239_237_231_/_0.28)] pb-3 text-lg font-black">Services</h3>

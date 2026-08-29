@@ -147,8 +147,8 @@ document.querySelectorAll('[data-hero-carousel]').forEach((carousel) => {
   let activeIndex = slides.findIndex((slide) => slide.classList.contains('is-active'));
   let autoplayTimer;
   let autoplayDirection = 1;
-  const autoplayDelay = 6500;
-  const interactionDelay = 11000;
+  const autoplayDelay = 4200;
+  const interactionDelay = 6500;
 
   if (activeIndex < 0) activeIndex = 0;
 

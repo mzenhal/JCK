@@ -4,8 +4,8 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   const filterBtns = document.querySelectorAll('.filter-btn');
-  const projectCards = document.querySelectorAll('.project-card[data-category]');
-  if (!filterBtns.length || !projectCards.length) return;
+  const items = document.querySelectorAll('.project-card[data-category], .gallery-item[data-category]');
+  if (!filterBtns.length || !items.length) return;
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -15,15 +15,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const filter = btn.getAttribute('data-filter');
 
-      projectCards.forEach((card, index) => {
-        const category = card.getAttribute('data-category');
+      items.forEach((item, index) => {
+        const category = item.getAttribute('data-category');
         const shouldShow = filter === 'all' || category === filter;
 
         if (shouldShow) {
-          card.style.display = '';
-          card.style.animation = `fadeInUp 0.5s ${index * 0.05}s var(--ease-out) both`;
+          item.style.display = '';
+          item.style.animation = `PORTFOLIO_FADEUP 0.5s ${index * 0.05}s cubic-bezier(0.22, 1, 0.36, 1) both`;
         } else {
-          card.style.display = 'none';
+          item.style.display = 'none';
         }
       });
     });

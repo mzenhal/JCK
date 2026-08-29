@@ -3,13 +3,30 @@ const menu = document.querySelector('[data-menu]');
 const siteHeader = document.querySelector('[data-site-header]');
 
 if (siteHeader) {
+  if (!window.location.hash && 'scrollRestoration' in window.history) {
+    window.history.scrollRestoration = 'manual';
+    window.scrollTo(0, 0);
+  }
+
   const updateHeader = () => {
-    const isActive = window.scrollY > 24 || siteHeader.dataset.menuOpen === 'true';
-    siteHeader.classList.toggle('is-scrolled', window.scrollY > 24);
-    siteHeader.dataset.state = isActive ? 'active' : '';
+    const scrollTop = Math.max(
+      window.scrollY,
+      document.documentElement.scrollTop || 0,
+      document.body.scrollTop || 0,
+    );
+    const hasScrolled = scrollTop > 8;
+    const isActive = hasScrolled || siteHeader.dataset.menuOpen === 'true';
+    siteHeader.classList.toggle('is-scrolled', hasScrolled);
+    siteHeader.classList.toggle('is-at-top', !isActive);
+    if (isActive) {
+      siteHeader.dataset.state = 'active';
+    } else {
+      siteHeader.removeAttribute('data-state');
+    }
   };
 
   updateHeader();
+  requestAnimationFrame(updateHeader);
   window.addEventListener('scroll', updateHeader, { passive: true });
 
   siteHeader.updateHeaderState = updateHeader;
